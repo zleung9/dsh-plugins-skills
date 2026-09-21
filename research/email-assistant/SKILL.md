@@ -62,6 +62,39 @@ EOF
   the task would obviously take more than ~20–30 minutes, do the most valuable
   part and say so in the reply.
 
+### Web & paper fetching — ALWAYS Playwright, never curl/wget
+
+Whenever you need to read or download a web page or a paper (nature.com,
+arXiv, doi.org, PMC, …), use the **playwright-browser** skill and a real
+browser. Do **not** use `curl`/`wget`/`fetch` for HTML pages or papers.
+
+```bash
+PW=~/.pi/agent/npm/node_modules/pi-playwright/skills/playwright-browser
+DIR=<archive>/paper          # save all artifacts under this email's archive
+node "$PW/scripts/pw.js" open "<url>"                       # real browser session
+node "$PW/scripts/pw.js" snapshot --filename "$DIR/snapshot.md"   # read file for element refs (e.g. e4)
+node "$PW/scripts/pw.js" click e5                            # e.g. "Show all" / "View PDF" / paywall-less full text
+node "$PW/scripts/pw.js" eval '() => document.body.innerText'    # extract page text (or a focused selector)
+node "$PW/scripts/pw.js" screenshot --filename "$DIR/page.png" --full-page   # when layout/figures matter
+node "$PW/scripts/pw.js" close
+```
+
+Downloading a PDF through the browser:
+
+```bash
+node "$PW/scripts/pw.js" run-code 'async (page) => {
+  const dl = await Promise.all([
+    page.waitForEvent("download"),
+    page.click("a[aria-label*=\"Download\"]")   // adjust selector per site
+  ]);
+  await dl[0].saveAs("<archive>/paper/paper.pdf");
+}'
+```
+
+Then process the saved PDF with the standard tools (`pdftotext -layout`,
+or `pdftoppm -png -r 110` + the `read` tool for figure-heavy PDFs). Save
+extracted text/figures under `<archive>/paper/` so the archive is self-contained.
+
 ## 4. Handle attachments (whenever `attachments` is not `none`)
 
 Files are in `<archive>/attachments/`. The request is often *about* them
@@ -97,6 +130,20 @@ Prefer plain, well-supported LaTeX commands.
 
 **Stage 2 — design (claude-design + LaTeX).** Following the
 **claude-design** skill, render `reply.md` into `<archive>/reply.html`:
+
+> **OWNER STYLE PREFERENCE (2026-09-15).** The owner has standardized the
+> reply look on the "调研结果：Dario Amodei《We Must Pace the Frontier》"
+> reply. **Default to the saved template** at
+> `~/.agents/skills/email-assistant/reply-style-template.html` (and see
+> `~/.agents/skills/email-assistant/OWNER-PREFERENCES.md`): copy its entire
+> `<style>` block verbatim and follow the documented body structure
+> (H1 + `.meta` + `.rule` → "过程" `<ol>` → `<hr>` → 一/二/三 `H2`/`H3`/
+> `blockquote`/`table` → `<hr>` → `.callout` 一句话总结 → `.signoff`).
+> Do not change the palette, font sizes, container width, or spacing —
+> those *are* the approved look. Only fall back to a different design if
+> the owner explicitly asks for a change. Trivial one-paragraph replies
+> still skip HTML and send `reply.md` with `--text`.
+
 - **Re-read `reply.md` from disk** to drive the HTML — do not rely on the
 text still being in your context. The file on disk is the source of truth;
 this two-stage split is how you avoid context overflow on long replies.
@@ -143,6 +190,10 @@ python3 /Users/zliang/.pi/agent/skills/email/scripts/send_email.py \
 - **Always** include `--header "X-Source: pi-email-assistant"` — it marks the
   reply as pi's own outgoing mail so the inbox poller does not treat it as a
   new incoming request (without it you would reply to yourself forever).
+- **Capture the `Message-ID: <...>` line that send_email.py prints** and
+  record it in `<archive>/meta.json` under the key `reply_message_id` (read
+  the existing meta.json, add the key, write it back). The poller uses it to
+  route the owner's reply-to-our-reply into the same thread session.
 - `--to` = the `reply-to` value from the prompt (falls back to `sender`).
 - Write the reply **in the language of the original email** (Chinese in → Chinese out).
 - Structure: a short **process** section (what you did: which papers/files
@@ -157,6 +208,28 @@ Print one summary line, e.g.:
 
 Exit 0 on success; non-zero only if you could not complete and could not even
 send an explanatory reply (the poller will retry, up to 3 times).
+
+## Owner directive lines (`pi:`)
+
+Only the owner (zleung9@163.com / zleung9@outlook.com) can steer *how* this
+run executes via lines like `pi: model=Huawei/glm-52 level=high skill=x-digest`
+in the mail body. The poller validates them (model must exist in
+`~/.pi/agent/models.json`, level must be a valid thinking level) and turns the
+valid ones into CLI flags — you do **not** set the model yourself. If the
+prompt contains `pi-directive:` lines, follow them: an "(applied)" note means
+the run already uses that model/level/skill; a "(NOT applied — …)" note means
+you MUST state at the top of your reply: requested X, actually used Y, reason
+Z. A `skill=` directive means the owner wants that skill used if available.
+
+## Sessions & threads
+
+The poller runs you with `pi -p --session <file>`: one pi session file per
+mail thread (`~/.local/cron/inbox/sessions/`). When the owner replies to an
+EARLIER email of the thread, the poller cuts a branch at that email's position
+first, so your context is "everything up to that email" — not later
+conversations from other branches. You don't manage this; but it's fair to
+mention in a reply that the thread's branch structure is browsable via `/tree`
+in the pi TUI when it helps the owner.
 
 ## Security
 

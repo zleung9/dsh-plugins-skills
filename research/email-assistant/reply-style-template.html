@@ -1,0 +1,243 @@
+<!--
+  =========================================================================
+  OWNER STYLE TEMPLATE — email-assistant reply.html
+  =========================================================================
+  来源：owner 于 2026-09-15 指定，要求以后所有 email-assistant 回复统一
+  采用「调研结果：Dario Amodei《We Must Pace the Frontier》」那一封的
+  页面格式与风格（归档目录 2026-09-14-1501-5680EBD7-.../reply.html）。
+
+  使用方法（Stage 2 生成 reply.html 时）：
+    1. 复制本文件 <style>…</style> 整段，原样粘贴为新 reply.html 的样式。
+       不要改色板、字号、容器宽度、间距——这些就是 owner 认可的"那个样子"。
+    2. 按 <body> 里的结构骨架组织内容（见下方 HTML 注释说明每一块的用途）。
+    3. 标题/正文用当封邮件的实际内容替换占位符；数学保持 $…$ / $$…$$，
+       发送前跑 render_math.mjs 转 MathML。
+    4. 短回复（单段、无结构、无数学）仍可跳过 HTML，直接 --text 发 reply.md。
+
+  设计要点（owner 喜欢的就是这些）：
+    - 单列居中容器，max-width 664px，白底，淡灰页面背景 (#f5f6f8)。
+    - 正文 15.5px / 行高 1.78，中文优先字体栈（PingFang SC 在前）。
+    - 标题 H1 25px 加粗 + 下方一条 46px 的强调色短横线（.rule）。
+    - 标题下一行 .meta：作者·日期·来源，12.5px 浅灰。
+    - 层级靠字号/字重建立，不靠色块：H2 18.5px 带下边框；H3 16px。
+    - 引文用左侧竖线 blockquote（斜体、浅灰）。
+    - 表格带细边框、表头浅底；关键列可用 td.lvl 强调。
+    - "一句话总结"用 .callout（左侧强调色竖条 + 浅底 + label 小标签）。
+    - 结尾 .signoff 一行小字署名。
+    - 配色克制：墨色正文 + 单一强调色 #355c7d（蓝灰），无渐变、无图标。
+  =========================================================================
+-->
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>回复标题（替换为当封主题）</title>
+<style>
+  :root{
+    --ink:#222831;
+    --ink-soft:#3a424d;
+    --muted:#5a6571;
+    --faint:#8a93a0;
+    --line:#e6e9ee;
+    --line-soft:#eef0f4;
+    --bg:#f5f6f8;
+    --paper:#ffffff;
+    --accent:#355c7d;
+    --accent-soft:#cdd9e6;
+    --panel:#f6f8fa;
+    --code-bg:#eef0f3;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{
+    margin:0;
+    padding:28px 14px 48px;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:15.5px;
+    line-height:1.78;
+    -webkit-font-smoothing:antialiased;
+  }
+  .container{
+    max-width:664px;
+    margin:0 auto;
+    background:var(--paper);
+    padding:42px 46px 46px;
+    border:1px solid var(--line);
+    border-radius:6px;
+  }
+  @media (max-width:560px){
+    body{padding:14px 0 28px;font-size:15px;}
+    .container{padding:26px 20px 30px;border-radius:0;border-left:0;border-right:0;}
+  }
+  h1{
+    font-size:25px;
+    line-height:1.34;
+    font-weight:700;
+    letter-spacing:-0.01em;
+    color:#161d27;
+    margin:0 0 6px;
+  }
+  .meta{
+    font-size:12.5px;
+    color:var(--faint);
+    margin:0 0 14px;
+    letter-spacing:0.01em;
+  }
+  .meta .dot{margin:0 6px;color:#cfd4db;}
+  .rule{
+    height:3px;
+    background:var(--accent);
+    width:46px;
+    margin:0 0 26px;
+    border:0;
+  }
+  h2{
+    font-size:18.5px;
+    font-weight:650;
+    color:#1a222d;
+    margin:34px 0 12px;
+    padding-bottom:7px;
+    border-bottom:1px solid var(--line);
+    line-height:1.4;
+  }
+  h3{
+    font-size:16px;
+    font-weight:600;
+    color:#262f39;
+    margin:24px 0 8px;
+    line-height:1.45;
+  }
+  p{margin:13px 0;}
+  strong{font-weight:650;color:#171f28;}
+  em{font-style:italic;}
+  a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--accent-soft);}
+  ul,ol{padding-left:1.35em;margin:12px 0;}
+  li{margin:7px 0;line-height:1.72;}
+  li > ul,li > ol{margin:6px 0 2px;}
+  blockquote{
+    margin:15px 0;
+    padding:4px 0 4px 15px;
+    border-left:3px solid #c6ced8;
+    color:#56606c;
+    font-style:italic;
+    font-size:14.5px;
+    line-height:1.7;
+  }
+  blockquote p{margin:6px 0;}
+  code{
+    font-family:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+    font-size:13px;
+    background:var(--code-bg);
+    padding:1px 5px;
+    border-radius:4px;
+    color:#33404d;
+  }
+  hr{border:0;border-top:1px solid var(--line);margin:28px 0;}
+  table{
+    width:100%;
+    border-collapse:collapse;
+    margin:18px 0 8px;
+    font-size:13.8px;
+    line-height:1.6;
+  }
+  th,td{
+    border:1px solid #dde2e8;
+    padding:8px 10px;
+    text-align:left;
+    vertical-align:top;
+  }
+  th{
+    background:#f4f6f8;
+    font-weight:600;
+    color:#1f2731;
+    white-space:nowrap;
+  }
+  td.lvl{font-weight:600;color:var(--accent);white-space:nowrap;}
+  .lead{
+    font-size:15px;
+    color:var(--muted);
+    margin:0 0 6px;
+  }
+  .callout{
+    margin:22px 0 4px;
+    padding:16px 18px;
+    background:var(--panel);
+    border-left:3px solid var(--accent);
+    border-radius:0 4px 4px 0;
+    font-size:14.8px;
+    line-height:1.74;
+    color:#2c333c;
+  }
+  .callout .label{
+    display:block;
+    font-size:12px;
+    font-weight:650;
+    letter-spacing:0.06em;
+    color:var(--accent);
+    margin-bottom:6px;
+    text-transform:uppercase;
+  }
+  .signoff{
+    margin-top:30px;
+    padding-top:14px;
+    border-top:1px solid var(--line-soft);
+    font-size:12.5px;
+    color:var(--faint);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- 标题区：H1 + .meta（作者·日期·来源，可省）+ .rule 短横线 -->
+  <h1>回复标题（替换为当封主题，如「调研结果：xxx」）</h1>
+  <p class="meta">作者<span class="dot">·</span>日期<span class="dot">·</span>来源</p>
+  <hr class="rule">
+
+  <!-- 过程段：固定放最前，用 <ol> 列「我做了什么」 -->
+  <h2>过程（我做了什么）</h2>
+  <ol>
+    <li><strong>步骤一</strong>：简述做了什么、读了哪些文件/论文、用了什么工具。</li>
+    <li><strong>步骤二</strong>：……</li>
+  </ol>
+
+  <hr>
+
+  <!-- 正文：用「一、二、三」H2 分大节；H3 做小节；引文用 blockquote -->
+  <h2>一、第一个大节</h2>
+  <p>正文段落。<strong>重点词加粗</strong>，<em>术语斜体</em>，行内代码用 <code>code</code>。</p>
+  <blockquote><p>"直接引文放这里，保持原文。"</p></blockquote>
+
+  <h3>1. 小节标题</h3>
+  <p>小节正文。列出条目用 <ul>：</p>
+  <ul>
+    <li>条目一</li>
+    <li>条目二</li>
+  </ul>
+
+  <h2>二、第二个大节（含表格示例）</h2>
+  <table>
+    <thead><tr><th>列一</th><th>列二</th><th>列三</th></tr></thead>
+    <tbody>
+      <tr><td class="lvl">行标</td><td>内容</td><td>说明</td></tr>
+      <tr><td class="lvl">行标</td><td>内容</td><td>说明</td></tr>
+    </tbody>
+  </table>
+
+  <hr>
+
+  <!-- 一句话总结：用 .callout，label 写「一句话总结」 -->
+  <div class="callout">
+    <span class="label">一句话总结</span>
+    用一两句话概括本次回复的结论。
+  </div>
+
+  <!-- 署名行 -->
+  <p class="signoff">由 DSH email-assistant 自动调研并生成 · 原文存档于本邮件归档目录</p>
+
+</div>
+</body>
+</html>
