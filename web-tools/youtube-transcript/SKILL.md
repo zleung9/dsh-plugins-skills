@@ -9,9 +9,11 @@ Fetch transcripts from YouTube videos.
 
 ## Setup
 
+Dependencies are shared globally — `node_modules/` here is a symlink to
+`~/.agents/node_modules` (already contains `youtube-transcript-plus`):
+
 ```bash
-cd {baseDir}
-npm install
+npm install --prefix ~/.agents     # once, for every skill
 ```
 
 ## Usage

@@ -22,21 +22,26 @@ DATE=$(date +%F)
 ## Browser: Playwright Chromium (NOT the user's Chrome)
 
 The pipeline uses Playwright's own Chromium with a **dedicated persistent
-profile** at `browser-profile/`:
+profile** at `~/.agents/browser-profiles/x-digest` (deliberately OUTSIDE the
+skill dir, so the live Chrome profile is never uploaded by Nutstore; override
+with the `X_PROFILE_DIR` env var):
 
 - **No user extensions are ever loaded** → the X.com "Something went wrong …
   privacy related extensions" error cannot happen. (This was the old failure
   mode when we drove the user's Chrome/CDP profile, where the Zotero
   Connector content script broke X's SPA bootstrap.)
-- **Login cookies persist to disk** in `browser-profile/` → log in once, no
+- **Login cookies persist to disk** in that profile → log in once, no
   re-login on later runs (until X expires the session).
 - No `:9222` CDP port, no dependency on the user's running Chrome.
 - Network egress uses the macOS system proxy (Clash at 127.0.0.1:7890)
   automatically — X.com is reachable from China.
 
-Setup (already done — only if `node_modules` is missing):
-`npm install` in the skill dir (pins playwright 1.62.x, which matches the
-installed Chromium in `~/Library/Caches/ms-playwright/chromium-1234`).
+Dependencies are shared globally, not installed per skill: this skill's
+`node_modules/` is a **symlink** to `~/.agents/node_modules` (playwright
+1.63.x, matching the installed Chromium in
+`~/Library/Caches/ms-playwright/chromium-1243`). Install/upgrade them once
+for every skill with `npm install --prefix ~/.agents`; never run `npm install`
+inside the skill dir (that would replace the symlink with a local copy).
 
 ## Pipeline
 
@@ -152,7 +157,7 @@ Done: <N> relevant items, <M> tweets in 24h (<K> captured), <K2> in store. Diges
 
 | Script | Purpose |
 |---|---|
-| `scripts/pw-common.mjs` | shared Playwright helpers (persistent profile `browser-profile/`, login check) |
+| `scripts/pw-common.mjs` | shared Playwright helpers (persistent profile `~/.agents/browser-profiles/x-digest`, login check) |
 | `scripts/x-status.mjs` | print `{loggedIn, hasAuthToken, cookieCount}` JSON |
 | `scripts/x-login.mjs` | open visible login window, poll until auth_token appears |
 | `scripts/fetch_feed.mjs` | scroll-capture the Following feed → JSON |
@@ -160,10 +165,12 @@ Done: <N> relevant items, <M> tweets in 24h (<K> captured), <K2> in store. Diges
 
 ## Notes
 
-- Only **one** process may hold `browser-profile/` at a time (SingletonLock) —
-  run the scripts sequentially (the pipeline already does).
-- `browser-profile/` may grow; deleting it only forces a re-login, nothing
-  else is stored there.
+- Only **one** process may hold `~/.agents/browser-profiles/x-digest` at a time
+  (SingletonLock) — run the scripts sequentially (the pipeline already does).
+- The profile lives outside the skill dir and outside Nutstore; it may grow
+  with browser caches. Deleting its `Default/Cache`, `Default/Code Cache` and
+  `Default/Service Worker` subdirs reclaims space **without** losing the login;
+  deleting the whole profile only forces a re-login.
 - If X expires the session (x-status says not logged in mid-pipeline), run
   `x-login.mjs` and retry — do not skip the day silently.
 - If Chromium fails to launch (missing browser binary): `npx playwright install chromium`.

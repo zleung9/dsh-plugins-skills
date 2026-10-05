@@ -1,7 +1,7 @@
 ---
 name: web-search-chrome
 description: General-purpose web search using a real Chrome browser and Google, via the Chrome DevTools Protocol. Returns organic search results (title, URL, snippet) as JSON. Use this for everyday web lookups — facts, products, news, documentation, people, "how to" questions, or anything you'd type into Google — especially when the built-in WebSearch tool is unavailable (it's US-only and hangs from China). For scholarly lookups (papers, DOIs, citation counts) use the web-search-academic skill instead. Trigger on phrases like "搜索/查一下/搜一下 X", "search the web for X", "google X", "look up X online", or any request needing current information from the general web.
-compatibility: Requires Node.js and puppeteer-core (run `npm install` in the skill dir once). Drives Chrome with remote debugging on port 9222; Chrome is auto-started via the sibling browser-tools skill, or any Chrome launched with --remote-debugging-port=9222. Needs network access to google.com (works through a local proxy such as Clash/verge-mihomo).
+compatibility: Requires Node.js and puppeteer-core (shared globally — this skill's node_modules is a symlink to ~/.agents/node_modules). Drives Chrome with remote debugging on port 9222; Chrome is auto-started via the sibling browser-tools skill, or any Chrome launched with --remote-debugging-port=9222. Needs network access to google.com (works through a local proxy such as Clash/verge-mihomo).
 ---
 
 # Web Search (Chrome + Google)
@@ -14,11 +14,15 @@ compatibility: Requires Node.js and puppeteer-core (run `npm install` in the ski
 
 ## 一次性安装
 
+依赖**全局共享**,不需要在本技能目录安装：本目录的 `node_modules/` 是指向
+`~/.agents/node_modules` 的软链（已含 `puppeteer-core`）。
+
 ```bash
-cd {baseDir}/web-search-chrome && npm install
+npm install --prefix ~/.agents     # 仅首次或升级时执行,一次性装给所有技能
 ```
 
 只装 `puppeteer-core`（很轻，不下载 Chromium——本 skill 连接的是已运行的 Chrome）。
+不要在技能目录里跑 `npm install`,那会把软链替换成本地副本。
 
 ## 搜索
 

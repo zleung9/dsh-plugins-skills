@@ -9,12 +9,16 @@ Chrome DevTools Protocol tools for agent-assisted web automation. These tools co
 
 ## Setup
 
-Run once before first use:
+Dependencies are shared globally — `node_modules/` here is a symlink to
+`~/.agents/node_modules` (already contains `puppeteer-core`, `cheerio`,
+`jsdom`, `turndown`, `@mozilla/readability`):
 
 ```bash
-cd {baseDir}/browser-tools
-npm install
+npm install --prefix ~/.agents     # once, for every skill
 ```
+
+Never run `npm install` inside the skill dir — that would replace the symlink
+with a local copy and drag dependencies back into the synced folder.
 
 ## Start Chrome
 

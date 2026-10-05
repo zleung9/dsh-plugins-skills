@@ -4,6 +4,59 @@ A collection of **137 skills** organized into 13 categories.
 
 Each skill lives in its own directory with a `SKILL.md` file (YAML frontmatter with `name` and `description`, plus the skill instructions).
 
+## Shared toolchain (dependencies live outside this repo)
+
+This repo is a **text-only, cloud-synced** folder, so it holds no installable
+artifacts. Node dependencies and browser profiles live in a **cross-agent
+neutral root** at `~/.agents/`, shared by pi, Claude Code and Codex alike:
+
+```
+~/.agents/
+  node_modules/          # one copy of playwright / puppeteer-core / cheerio / jsdom / …
+  browser-profiles/      # persistent Chromium profiles (keep X login state)
+  backup/                # pre-refactor backups of profiles and removed junk
+  skills/                # symlinks into this repo (30 entries)
+```
+
+**Calling convention — two mechanisms, because Node resolves them differently:**
+
+1. **Libraries** (`import { chromium } from "playwright"`) are found by walking
+   *upward* from the script dir. Each consuming skill therefore has a
+   `node_modules` **symlink** pointing at the shared root:
+
+   ```
+   research/x-digest/node_modules      -> ~/.agents/node_modules
+   web-tools/x-login/node_modules      -> ~/.agents/node_modules
+   web-tools/web-search-chrome/node_modules -> ~/.agents/node_modules
+   web-tools/browser-tools/node_modules     -> ~/.agents/node_modules
+   web-tools/youtube-transcript/node_modules -> ~/.agents/node_modules
+   ```
+
+   Install / upgrade everything once with `npm install --prefix ~/.agents`.
+   **Never run `npm install` inside a skill dir** — that replaces the symlink
+   with a local copy and puts the weight back into the synced folder.
+
+   > `NODE_PATH` is *not* an option here: Node's ESM resolver ignores it
+   > entirely (only CommonJS `require()` honours it), and these scripts are ESM.
+
+2. **CLI tools** (`getnote`, `codex`, `claude`, `mcporter`, `defuddle`, `ntn`,
+   `ob`) resolve through `PATH` and are installed with `npm install -g`, which
+   is what `npm -g` is actually designed for.
+
+Browser profiles are addressed by an absolute path with an env override, e.g.
+in `pw-common.mjs`:
+
+```js
+export const X_PROFILE =
+  process.env.X_PROFILE_DIR ||
+  join(homedir(), ".agents", "browser-profiles", "x-digest");
+```
+
+They are deliberately kept out of this repo: they are live Chrome user-data
+dirs that would otherwise be re-uploaded by Nutstore on every run. Each
+profile's `Default/Cache`, `Default/Code Cache` and `Default/Service Worker`
+can be deleted at any time to reclaim space **without** losing the login.
+
 ## Categories
 
 - [Administration](#administration) (1)
