@@ -1,0 +1,11 @@
+{
+  "name": "x-login",
+  "version": "1.0.0",
+  "description": "Log in to X.com (Twitter) with Playwright Chromium via a dedicated persistent profile. Headless status check + visible-window interactive sign-in + optional automated form-fill helper.",
+  "type": "module",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "playwright": "^1.62.1"
+  }
+}
