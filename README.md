@@ -57,6 +57,33 @@ dirs that would otherwise be re-uploaded by Nutstore on every run. Each
 profile's `Default/Cache`, `Default/Code Cache` and `Default/Service Worker`
 can be deleted at any time to reclaim space **without** losing the login.
 
+## Runtime records live in `~/agent-data`
+
+Daily-growing output (captured feeds, generated digests, dedup stores, email
+archive, long-term memory) is **not** kept here either. It lives in a separate
+data workspace, `~/agent-data`, documented in its own README:
+
+```
+~/agent-data/
+  x-digest/data/            feeds, digests, seen.json
+  nature-digest/data/       candidates, digests, seen.json
+  email-assistant/archive/  one dir per processed email
+  email-assistant/memory/   interests.jsonl, topics.json, dream.py
+```
+
+Each script resolves its data root from an env var with a default pointing
+there, so this repo holds **no runtime state at all**:
+
+| Skill | Env var | Default |
+|---|---|---|
+| x-digest | `X_DIGEST_DATA_DIR` | `~/agent-data/x-digest/data` |
+| nature-digest | `NATURE_DIGEST_DATA_DIR` | `~/agent-data/nature-digest/data` |
+| email-assistant | `MAIL_ARCHIVE_ROOT` / `EMAIL_ASSISTANT_MEMORY` | `~/agent-data/email-assistant/{archive,memory}` |
+
+`data/`, `memory/` and `pi-mail-archive/` are listed in `.gitignore` as a guard
+against regression — a skill writing to a bare `data/…` path inside its own
+directory is a bug.
+
 ## Categories
 
 - [Administration](#administration) (1)

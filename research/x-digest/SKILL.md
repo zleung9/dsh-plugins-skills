@@ -9,15 +9,20 @@ You are running an **automated, headless** daily digest. Do **not** ask the user
 any questions — make reasonable decisions and proceed to completion. Output a
 concise one-line summary at the very end.
 
-All paths below are relative to the skill directory. **First, always run:**
+Paths: **skill code** is relative to the skill directory (`scripts/…`);
+**runtime data** lives in `$DATA` (= `~/agent-data/x-digest/data`), deliberately
+outside the skill dir so it is never uploaded by Nutstore. **First, always run:**
 
 ```bash
 cd /Users/zliang/.pi/agent/skills/x-digest
 DATE=$(date +%F)
+DATA=~/agent-data/x-digest/data     # override with X_DIGEST_DATA_DIR
+mkdir -p "$DATA/digests"
 ```
 
 (The real directory is `~/Nutstore Files/skills/research/x-digest`; the
-`.pi/agent/skills/...` path is a symlink to it.)
+`.pi/agent/skills/...` path is a symlink to it. Never use a bare `data/…` path —
+that would write runtime output back into the synced folder.)
 
 ## Browser: Playwright Chromium (NOT the user's Chrome)
 
@@ -61,7 +66,7 @@ node scripts/x-status.mjs
 ### 2. Capture the following feed (deterministic)
 
 ```bash
-node scripts/fetch_feed.mjs --scrolls 16 --wait 2200 --out data/feed_$DATE.json --merge
+node scripts/fetch_feed.mjs --scrolls 16 --wait 2200 --out "$DATA/feed_$DATE.json" --merge
 ```
 
 Opens x.com/home in the persistent profile, switches to the **Following**
@@ -93,7 +98,7 @@ When uncertain and clearly AI-adjacent, **keep it**.
 
 ### 5. Write the digest (Chinese, Markdown)
 
-Write to `data/digests/$DATE.md`:
+Write to `$DATA/digests/$DATE.md`:
 
 ```markdown
 # X AI · LLM · Agent 日报
@@ -124,8 +129,8 @@ Times: tweet `time` is UTC — convert to 北京时间 (UTC+8).
 
 ### 6. Update the dedup store (do this every run)
 
-`data/seen.json`: `{ lastRun, tweets: { "<id>": {firstSeen, handle, time, snippet, relevant} } }`.
-Add every tweet id from `data/feed_$DATE.json` (relevant or not). On later
+`$DATA/seen.json`: `{ lastRun, tweets: { "<id>": {firstSeen, handle, time, snippet, relevant} } }`.
+Add every tweet id from `$DATA/feed_$DATE.json` (relevant or not). On later
 runs you may skip already-seen ids in the digest, but keep listing them in
 the store. Set `lastRun = $DATE`.
 
@@ -140,7 +145,7 @@ sender `zleung9@163.com`, config `~/.config/msmtp/config`) using
 - Otherwise:
 
 ```bash
-node scripts/send_email.mjs --subject "X AI · LLM · Agent 日报 — $DATE" --html-file data/digests/$DATE.md --to zleung9@outlook.com
+node scripts/send_email.mjs --subject "X AI · LLM · Agent 日报 — $DATE" --html-file "$DATA/digests/$DATE.md" --to zleung9@outlook.com
 ```
 
 Treat a successful msmtp send (exit 0) as success. Never block on email config.
@@ -150,7 +155,7 @@ Treat a successful msmtp send (exit 0) as success. Never block on email config.
 Print exactly one line:
 
 ```
-Done: <N> relevant items, <M> tweets in 24h (<K> captured), <K2> in store. Digest: data/digests/<DATE>.md [email sent|email dry-run|email skipped]
+Done: <N> relevant items, <M> tweets in 24h (<K> captured), <K2> in store. Digest: $DATA/digests/<DATE>.md [email sent|email dry-run|email skipped]
 ```
 
 ## Scripts

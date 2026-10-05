@@ -12,6 +12,27 @@ node_modules/
 # synced folder in ~/.agents/browser-profiles/ (kept here for safety).
 **/browser-profile/
 
+# ---------------------------------------------------------------------------
+# Runtime records. These must NOT live in the repo: they are daily-growing
+# output that belongs in the data workspace ~/agent-data (see README.md).
+# The skills resolve their data dir from an env var (X_DIGEST_DATA_DIR,
+# NATURE_DIGEST_DATA_DIR, MAIL_ARCHIVE_ROOT, EMAIL_ASSISTANT_MEMORY), so these
+# paths should never reappear — the rules below are a guard against regression.
+# ---------------------------------------------------------------------------
+
+# x-digest daily captures + generated digests + dedup store
+research/x-digest/data/
+
+# nature-digest candidates + digests + dedup store
+research/nature-digest/data/
+
+# email-assistant long-term memory (also holds dream.py, which lives with its
+# data by design)
+research/email-assistant/memory/
+
+# email archive (was ~/Nutstore Files/pi-mail-archive)
+**/pi-mail-archive/
+
 # macOS / tooling noise
 .DS_Store
 .playwright-cli/

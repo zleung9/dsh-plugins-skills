@@ -1,18 +1,27 @@
 #!/usr/bin/env node
 // fetch_papers.mjs
 // Fetch configured Nature RSS feeds, parse RSS 1.0 (RDF), dedup by DOI across
-// feeds, drop DOIs already present in data/seen.json, and write the remaining
-// *new* candidates (compact) to --out. Deterministic — no LLM here.
+// feeds, drop DOIs already present in $NATURE_DIGEST_DATA_DIR/seen.json, and
+// write the remaining *new* candidates (compact) to --out. Deterministic — no
+// LLM here.
 //
 // Usage:
-//   node fetch_papers.mjs --out data/new_candidates.json
-//   node fetch_papers.mjs --out data/new_candidates.json --max-new 60
+//   node fetch_papers.mjs
+//   node fetch_papers.mjs --max-new 60
+// Default data dir: ~/agent-data/nature-digest/data
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, resolve } from "node:path";
+import { homedir } from "node:os";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SKILL_DIR = resolve(__dirname, "..");
+// Runtime data lives OUTSIDE the skill dir, in the dedicated data workspace
+// (~/agent-data/nature-digest), so it stays out of the Nutstore sync folder and
+// out of git. Override the location with NATURE_DIGEST_DATA_DIR.
+const DATA_DIR =
+  process.env.NATURE_DIGEST_DATA_DIR ||
+  join(homedir(), "agent-data", "nature-digest", "data");
 
 function parseArgs(argv) {
   const o = {};
@@ -25,8 +34,8 @@ function parseArgs(argv) {
 
 const args = parseArgs(process.argv.slice(2));
 const feedsPath = args.feeds || join(SKILL_DIR, "config", "feeds.json");
-const seenPath = args.seen || join(SKILL_DIR, "data", "seen.json");
-const outPath = args.out || join(SKILL_DIR, "data", "new_candidates.json");
+const seenPath = args.seen || join(DATA_DIR, "seen.json");
+const outPath = args.out || join(DATA_DIR, "new_candidates.json");
 const maxNew = args["max-new"] ? parseInt(args["max-new"], 10) : 100;
 const abstractCap = 400;
 
