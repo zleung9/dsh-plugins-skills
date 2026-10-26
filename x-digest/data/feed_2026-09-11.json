@@ -1,0 +1,2004 @@
+{
+  "fetchedAt": "2026-09-11T01:33:22.155Z",
+  "count": 222,
+  "tweets": [
+    {
+      "id": "2098206198650880356",
+      "handle": "aigclink",
+      "name": "",
+      "text": "OpenAI推出Agents API影响还挺大的，将整个行业从token工厂推到Agent Runtime竞争新时代，它把驱动 Codex 的 harness（编排层）+ sandbox打包成一个免费的云托管服务，将优质agent runtime数据收集打成名牌了，沙箱任意可选OpenAI 托管沙箱、Blaxel/Cloudflare/E2B/Modal/Vercel或自有环境：\n\n1. Agent",
+      "time": "2026-09-11T00:25:15.000Z",
+      "link": "https://x.com/aigclink/status/2098206198650880356",
+      "rt": false
+    },
+    {
+      "id": "2097804579438231825",
+      "handle": "Apple",
+      "name": "",
+      "text": "全新 iPhone Duo、iPhone 18 Pro、Apple Watch Series 12、Apple Watch Ultra 4 及 AirPods 5。",
+      "time": "",
+      "link": "https://x.com/Apple/status/2097804579438231825/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098081973390725346",
+      "handle": "Tesla",
+      "name": "",
+      "text": "Photon count reconstruction FTW 😎",
+      "time": "2026-09-10T16:11:37.000Z",
+      "link": "https://x.com/Tesla/status/2098081973390725346",
+      "rt": false
+    },
+    {
+      "id": "2098216561714909404",
+      "handle": "wangzhian8848",
+      "name": "",
+      "text": "那个长沙饭店里和四岁男孩起冲突的年轻女性，现在被彻底反噬，留学搞不好都要泡汤了。\n\n四岁男孩的父亲，在网上回应时，变相公开了她的真实姓名。网友们顺藤摸瓜，找到她的学校，之后不停举报。",
+      "time": "2026-09-11T01:06:25.000Z",
+      "link": "https://x.com/wangzhian8848/status/2098216561714909404",
+      "rt": false
+    },
+    {
+      "id": "2098212152129781815",
+      "handle": "pingzhang632",
+      "name": "",
+      "text": "以色列国防军昨夜用1100吨炸药炸毁了塔希尔堡垒，整个山脊被削掉了一大块。伊朗数十亿美元的投入和真主党二十年苦心灰飞烟灭！",
+      "time": "2026-09-11T00:48:54.000Z",
+      "link": "https://x.com/pingzhang632/status/2098212152129781815",
+      "rt": false
+    },
+    {
+      "id": "2098117936569544744",
+      "handle": "hubermanlab",
+      "name": "",
+      "text": "New Huberman Lab Essentials episode out now: 30 minutes, key takeaways only. \n@OdedRechavi",
+      "time": "2026-09-10T18:34:31.000Z",
+      "link": "https://x.com/hubermanlab/status/2098117936569544744",
+      "rt": false
+    },
+    {
+      "id": "2098177044341244322",
+      "handle": "jefflijun",
+      "name": "",
+      "text": "哈哈哈",
+      "time": "2026-09-10T22:29:24.000Z",
+      "link": "https://x.com/jefflijun/status/2098177044341244322",
+      "rt": false
+    },
+    {
+      "id": "2098069512734027809",
+      "handle": "universal_sci",
+      "name": "",
+      "text": "Interesting fact:\n\nThe famous moon buggies (or Lunar Roving Vehicles) had 4 electric motors, one for each wheel, delivering just 0.25 horsepower.\n\nDespite their lack of power, the rovers could traverse the moon just fine due to the reduced gravity.\n\n(Credit: NASA)",
+      "time": "2026-09-10T15:22:06.000Z",
+      "link": "https://x.com/universal_sci/status/2098069512734027809",
+      "rt": false
+    },
+    {
+      "id": "2097871310101569969",
+      "handle": "DeryaTR_",
+      "name": "",
+      "text": "Surely they must have paused their IPO. I mean, who would invest in a misanthropic company developing AI that can potentially destroy humanity? And this is not about the money, right? Right?!",
+      "time": "2026-09-10T02:14:31.000Z",
+      "link": "https://x.com/DeryaTR_/status/2097871310101569969",
+      "rt": false
+    },
+    {
+      "id": "2080375530596245786",
+      "handle": "attio",
+      "name": "",
+      "text": "Introducing GTM Atlas, a map for modern AI GTM built with some of the best operators in the industry.\n\nA free resource covering the full customer journey, from lead capture to expansion, with the systems thinking that scales with you.",
+      "time": "",
+      "link": "https://x.com/attio/status/2080375530596245786/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097929222639767712",
+      "handle": "JoeTegtmeyer",
+      "name": "Joe Tegtmeyer 🚀 🤠🛸😎 reposted",
+      "text": "Congrats Boring Company team!",
+      "time": "2026-09-10T06:04:38.000Z",
+      "link": "https://x.com/elonmusk/status/2097929222639767712",
+      "rt": true
+    },
+    {
+      "id": "2098094924621086908",
+      "handle": "McFaul",
+      "name": "Michael McFaul reposted",
+      "text": "Over 6 months into this war, and Iran is still ready to escalate their fight.\n\nWe’ve accomplished none of our goals. Their leadership is more extreme than ever.\n\nWhy won’t Trump stop his war of choice?",
+      "time": "2026-09-10T17:03:05.000Z",
+      "link": "https://x.com/MarkWarner/status/2098094924621086908",
+      "rt": true
+    },
+    {
+      "id": "2098035498107490723",
+      "handle": "wangzhian8848",
+      "name": "王局志安 reposted",
+      "text": "一个屁股引发的惨案，马来西亚大学回应了。感觉这个女孩留学悬了。",
+      "time": "2026-09-10T13:06:57.000Z",
+      "link": "https://x.com/wangzhian8848/status/2098035498107490723",
+      "rt": true
+    },
+    {
+      "id": "2097626983404577016",
+      "handle": "FramiaPro",
+      "name": "",
+      "text": "ChatGPT 6 Astra Computer Use Tutorial\n\nHow I made an entire viral short campaign in 15 mins\n\nHands free, watch how Codex + \n@FramiaPro\n did everything.",
+      "time": "",
+      "link": "https://x.com/FramiaPro/status/2097626983404577016/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097929969704054927",
+      "handle": "oran_ge",
+      "name": "",
+      "text": "DeepSeek V4.1 Flash 正式上线\n官方号称只用了 500B 的size就吊打自家  V4 Pro\n且超越了 GPT 5.6 Sol 和 Opus 5 等一众旗舰模型（真的？\n且缓存节省了四倍，推理速度极快，堪称黑科技\n且官方降价，是目前性价比最高的模型\n但神奇的是，V4 Pro 被强制下线了…\n\n4.1 Pro 能吊打 GPT 6 吗？",
+      "time": "2026-09-10T06:07:37.000Z",
+      "link": "https://x.com/oran_ge/status/2097929969704054927",
+      "rt": false
+    },
+    {
+      "id": "2098152741579239793",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "A deeper look into Orion.\n\nThis spectacular infrared view of the Orion Nebula reveals young stars hidden within clouds of cosmic dust, 1,350 light-years from Earth.\n\n(Video by WorldAndScience - Credit: ESO/J. Emerson/VISTA. - Acknowledgment: Cambridge Astronomical Survey Unit)",
+      "time": "2026-09-10T20:52:50.000Z",
+      "link": "https://x.com/WorldAndScience/status/2098152741579239793",
+      "rt": false
+    },
+    {
+      "id": "2097813997156282847",
+      "handle": "owl_posting",
+      "name": "",
+      "text": "my tweets are being included in presentations on how to deal with what is happening right now",
+      "time": "2026-09-09T22:26:47.000Z",
+      "link": "https://x.com/owl_posting/status/2097813997156282847",
+      "rt": false
+    },
+    {
+      "id": "2097675510180368665",
+      "handle": "elonmusk",
+      "name": "Elon Musk reposted",
+      "text": "The Tesla Cybercab’s rear trunk is huge. It fit our two full-size suitcases and two bags with plenty of room to spare and is very easy to load and unload. \n\nIt has 20.2 cu ft of storage, which is just shy of a Model 3 (21 cu ft), but is waaay easier to fit larger items since it’s",
+      "time": "2026-09-09T13:16:29.000Z",
+      "link": "https://x.com/niccruzpatane/status/2097675510180368665",
+      "rt": true
+    },
+    {
+      "id": "2092792609576190459",
+      "handle": "tobori_tw",
+      "name": "",
+      "text": "https://\nbit.ly/4xmLOo6\n?twclid=2627hs2r66my1q4abwaqe7yer2\n\n《秘密姐弟》\n這一切都只是意外而已。\n\n愛情｜青梅竹馬｜年上女主",
+      "time": "",
+      "link": "https://x.com/tobori_tw/status/2092792609576190459/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097888226086404401",
+      "handle": "python_xxt",
+      "name": "",
+      "text": "已婚的推友，\n家人在IT行业工作的，可以看一下这个。",
+      "time": "2026-09-10T03:21:44.000Z",
+      "link": "https://x.com/python_xxt/status/2097888226086404401",
+      "rt": false
+    },
+    {
+      "id": "2097906347404882107",
+      "handle": "pingzhang632",
+      "name": "",
+      "text": "【以色列大选焦点：内塔尼亚胡没重视“10.7大屠杀”情报？】\n\n随着以色列大选进入最后冲刺阶段，左派对内塔尼亚胡的攻击也开始大幅度升级。",
+      "time": "2026-09-10T04:33:45.000Z",
+      "link": "https://x.com/pingzhang632/status/2097906347404882107",
+      "rt": false
+    },
+    {
+      "id": "2098089692831072471",
+      "handle": "arcprize",
+      "name": "",
+      "text": "Final call for applications to present at ARC Prize Research Summit in Boston on Oct 23rd\n\nApplication deadline: September 14th, 2026, 11:59pm anywhere in the world\n\nTravel expenses will be covered for selected presenters",
+      "time": "2026-09-10T16:42:18.000Z",
+      "link": "https://x.com/arcprize/status/2098089692831072471",
+      "rt": false
+    },
+    {
+      "id": "2098143391364051130",
+      "handle": "universal_sci",
+      "name": "",
+      "text": "A rare glimpse into the birth of massive stars\n\nPismis 24 lies deep within the Lobster Nebula, where hot young stars are transforming their surroundings with intense energy.\n\n(Video by Universal-Sci - Credit: NASA, ESA, CSA, and STScI, A. Pagan (STScI) - Music: La",
+      "time": "2026-09-10T20:15:40.000Z",
+      "link": "https://x.com/universal_sci/status/2098143391364051130",
+      "rt": false
+    },
+    {
+      "id": "2097009251373953090",
+      "handle": "swnetcorp",
+      "name": "",
+      "text": "兔快 VPN\n\n面向 Windows、macOS、iOS 与 Android 用户提供多平台网络连接服务。\n\n支持多地区节点选择，并提供安装指南、使用说明与客户支持。\n\n查看产品功能和服务信息。",
+      "time": "",
+      "link": "https://x.com/swnetcorp/status/2097009251373953090/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097952436442828960",
+      "handle": "J_A_C_S",
+      "name": "",
+      "text": "The ACS 150 celebrations continue in Cape Town South Africa courtesy of the University of Cape Town",
+      "time": "2026-09-10T07:36:53.000Z",
+      "link": "https://x.com/J_A_C_S/status/2097952436442828960",
+      "rt": false
+    },
+    {
+      "id": "2098055393884729447",
+      "handle": "shaneparrish",
+      "name": "",
+      "text": "This has never been published, but Bill Gates apologized to Steve Jobs in a letter for how he publicly treated him.",
+      "time": "2026-09-10T14:26:00.000Z",
+      "link": "https://x.com/shaneparrish/status/2098055393884729447",
+      "rt": false
+    },
+    {
+      "id": "2098007134437011862",
+      "handle": "EnterProAI",
+      "name": "",
+      "text": "Look at this digital pottery space made with GPT-6 Astra in Enter.\nAdjust the height, width, and opening to shape a vase, bowl, or cup. A tiny pottery break in your browser.\nNo clay to clean up afterward.",
+      "time": "",
+      "link": "https://x.com/EnterProAI/status/2098007134437011862/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097732332438556951",
+      "handle": "GuangyuRobert",
+      "name": "",
+      "text": "the creator of Tome (20M users at peak) did a hard pivot a year ago, going from 70 people to 7, and from AI presentation to AI CRM. Now they are back on their feet, growing and raising\n\nrespect",
+      "time": "2026-09-09T17:02:16.000Z",
+      "link": "https://x.com/GuangyuRobert/status/2097732332438556951",
+      "rt": false
+    },
+    {
+      "id": "2098118060469285010",
+      "handle": "cb_doge",
+      "name": "",
+      "text": "Legacy media keep attacking Elon because every hit piece gets them clicks.",
+      "time": "2026-09-10T18:35:01.000Z",
+      "link": "https://x.com/cb_doge/status/2098118060469285010",
+      "rt": false
+    },
+    {
+      "id": "2098167889916551410",
+      "handle": "elonmusk",
+      "name": "",
+      "text": "Yup",
+      "time": "2026-09-10T21:53:01.000Z",
+      "link": "https://x.com/elonmusk/status/2098167889916551410",
+      "rt": false
+    },
+    {
+      "id": "1566857481472524288",
+      "handle": "naval",
+      "name": "Naval reposted",
+      "text": "Gotta teach the AGI to love",
+      "time": "2022-09-05T18:35:09.000Z",
+      "link": "https://x.com/ilyasut/status/1566857481472524288",
+      "rt": true
+    },
+    {
+      "id": "2097921049522561358",
+      "handle": "McFaul",
+      "name": "",
+      "text": "Thank you, \n@josephwutw\n, for this important statement about Taiwan's resilience.",
+      "time": "2026-09-10T05:32:10.000Z",
+      "link": "https://x.com/McFaul/status/2097921049522561358",
+      "rt": false
+    },
+    {
+      "id": "2087266799222153567",
+      "handle": "CMEGroup",
+      "name": "",
+      "text": "參與全球黃金定價基準市場。善用芝商所免費模擬交易平台，以虛擬資金零風險測試您的策略。",
+      "time": "",
+      "link": "https://x.com/CMEGroup/status/2087266799222153567/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098079433663889494",
+      "handle": "J_A_C_S",
+      "name": "",
+      "text": "That’s a wrap on day one of the #ACS150 #JACSSymposium at the University of Cape Town! \n\nA day of inspiring science, groundbreaking drug discovery research, and meaningful conversations shaping the future of global health.",
+      "time": "2026-09-10T16:01:32.000Z",
+      "link": "https://x.com/J_A_C_S/status/2098079433663889494",
+      "rt": false
+    },
+    {
+      "id": "2098223057865253375",
+      "handle": "jefflijun",
+      "name": "",
+      "text": "Friends这一段太逗了…",
+      "time": "2026-09-11T01:32:14.000Z",
+      "link": "https://x.com/jefflijun/status/2098223057865253375",
+      "rt": false
+    },
+    {
+      "id": "2098139521720226241",
+      "handle": "NewsfromScience",
+      "name": "",
+      "text": "A proposal to loosen hunting regulations in Italy has been condemned by scientists, who say the legislation will sideline the role of science in important decisions affecting the country’s wildlife.",
+      "time": "2026-09-10T20:00:18.000Z",
+      "link": "https://x.com/NewsfromScience/status/2098139521720226241",
+      "rt": false
+    },
+    {
+      "id": "2098155174497784163",
+      "handle": "liquidai",
+      "name": "Liquid AI reposted",
+      "text": "With Insilico, we got our LFM 2.6B model customized on retrosynthesis and it performs better than Astra! 🌊🌊🌊",
+      "time": "2026-09-10T21:02:30.000Z",
+      "link": "https://x.com/ramin_m_h/status/2098155174497784163",
+      "rt": true
+    },
+    {
+      "id": "2097113034162663603",
+      "handle": "leojing314",
+      "name": "Leo Jing reposted",
+      "text": "funding is pretty cool, but have you heard of revenue?",
+      "time": "2026-09-08T00:01:24.000Z",
+      "link": "https://x.com/craigweiss/status/2097113034162663603",
+      "rt": true
+    },
+    {
+      "id": "2098034603324002532",
+      "handle": "biantaishabi5",
+      "name": "",
+      "text": "我们要聊一聊原子、恒星和星云，聊聊熵和基因，以及人类能不能使空间弯曲；还有，为什么火箭会缩短。没错，我们将在本书中讨论所有这些话题，以及很多其他同样有趣的问题。\n\n乔治·伽莫夫\n1946年12月1日",
+      "time": "2026-09-10T13:03:23.000Z",
+      "link": "https://x.com/biantaishabi5/status/2098034603324002532",
+      "rt": false
+    },
+    {
+      "id": "2098056340862046632",
+      "handle": "cation_motion",
+      "name": "",
+      "text": "正是这本神作带我走入职业科学生涯。我读的是1978年科学出版社文革后的第一版",
+      "time": "2026-09-10T14:29:46.000Z",
+      "link": "https://x.com/cation_motion/status/2098056340862046632",
+      "rt": false
+    },
+    {
+      "id": "2080172786274947146",
+      "handle": "lantianvpn",
+      "name": "",
+      "text": "蓝天云VPN\n新用户体验套餐白嫖优惠码：skyline\n\n- 支持多设备同时使用\n- 支持ChatGPT，AI，流媒体类应用\n- 提供双ISP家宽住宅型节点\n- 4K视频流畅播放",
+      "time": "",
+      "link": "https://x.com/lantianvpn/status/2080172786274947146/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097552169662583003",
+      "handle": "ylecun",
+      "name": "Yann LeCun reposted",
+      "text": "Hinton finally admits he was wrong about radiologists because he didn't understand:\n\n1) Jevon's Paradox (when something is easier/cheaper we use more of it)\n\n2) The job of radiologists \n\nMaybe people who are gifted in a domain are not usually the best people to predict the impact",
+      "time": "2026-09-09T05:06:22.000Z",
+      "link": "https://x.com/Dan_Jeffries1/status/2097552169662583003",
+      "rt": true
+    },
+    {
+      "id": "2097989838414713255",
+      "handle": "SpoxCHN_MaoNing",
+      "name": "Mao Ning 毛宁 reposted",
+      "text": "At the invitation of Prime Minister of the Republic of India Narendra Modi, President Xi Jinping will attend the 18th BRICS Summit in New Delhi from September 12 to 13.",
+      "time": "2026-09-10T10:05:30.000Z",
+      "link": "https://x.com/MFA_China/status/2097989838414713255",
+      "rt": true
+    },
+    {
+      "id": "2097904249023926739",
+      "handle": "python_xxt",
+      "name": "",
+      "text": "AI肯定想不出来，\n这个屏幕过渡的动画效果。",
+      "time": "2026-09-10T04:25:24.000Z",
+      "link": "https://x.com/python_xxt/status/2097904249023926739",
+      "rt": false
+    },
+    {
+      "id": "2098139153682583738",
+      "handle": "argonne",
+      "name": "",
+      "text": "We’re making a BIG deal about science this fall!\n\nSee scientific visualizations light up Chicago’s Merchandise Mart for \n@ARTonTHEMART\n, featuring work from Argonne & \n@thisisUIC\n.\n\n📍 Chicago Riverwalk\n📅 Thurs-Sun, today through Nov. 15\n⏰ 7:30-8 p.m.\n🔗 \nhttps://\nalcf.anl.gov/where-data-bec\nomes-light\n…",
+      "time": "2026-09-10T19:58:50.000Z",
+      "link": "https://x.com/argonne/status/2098139153682583738",
+      "rt": false
+    },
+    {
+      "id": "2097728018617860562",
+      "handle": "Jonsid",
+      "name": "",
+      "text": "Can an AI agent run part of a company? We built an entire company to test it.\n\nCirrus Sleep, Inc. is a fully simulated firm: one complete fiscal year, 1,100+ files across 9 systems, a year of internal Slack. Conflicting numbers, governance constraints, ambiguity by design. No",
+      "time": "2026-09-09T16:45:08.000Z",
+      "link": "https://x.com/Jonsid/status/2097728018617860562",
+      "rt": false
+    },
+    {
+      "id": "2097824714161078330",
+      "handle": "GuangyuRobert",
+      "name": "",
+      "text": "name clashing with Princeton's CEO bench",
+      "time": "2026-09-09T23:09:22.000Z",
+      "link": "https://x.com/GuangyuRobert/status/2097824714161078330",
+      "rt": false
+    },
+    {
+      "id": "2097748922420830374",
+      "handle": "denny_zhou",
+      "name": "",
+      "text": "the biggest divide in research today: access to the most capable AI models, and the compute to put them to work",
+      "time": "2026-09-09T18:08:12.000Z",
+      "link": "https://x.com/denny_zhou/status/2097748922420830374",
+      "rt": false
+    },
+    {
+      "id": "2097716985077576159",
+      "handle": "PixVerse",
+      "name": "",
+      "text": "GPT-6 Astra brought a Blender blockout to life as a five cat meme concert.\n\nFrom simple gray geometry to a neon lit stage, complete with lights, screens, and five very serious performers.\n\nMade with PixVerse",
+      "time": "",
+      "link": "https://x.com/PixVerse/status/2097716985077576159/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098062144851845295",
+      "handle": "hubermanlab",
+      "name": "",
+      "text": "The accounts misusing clips from the Huberman Lab podcast to demonize cortisol (a hormone you want very elevated in first hour of your day and low in final hours of your night, BTW) are hilarious. Cortisol is neither “good” or “bad” just get the timing right per above by…",
+      "time": "2026-09-10T14:52:50.000Z",
+      "link": "https://x.com/hubermanlab/status/2098062144851845295",
+      "rt": false
+    },
+    {
+      "id": "2098046589948281076",
+      "handle": "POTUS",
+      "name": "President Donald J. Trump reposted",
+      "text": "President Donald J. Trump announces $500 rebate checks to nearly 1 million hardworking Americans who were wrongly overcharged through Obamacare.\n\n\"Our Administration is doing the right thing and giving the money back to the people who were wrongly ripped off.\"",
+      "time": "2026-09-10T13:51:01.000Z",
+      "link": "https://x.com/WhiteHouse/status/2098046589948281076",
+      "rt": true
+    },
+    {
+      "id": "2097134469488816203",
+      "handle": "arifure_ads",
+      "name": "",
+      "text": "New game you didn't know about\n\nGive it a try!",
+      "time": "",
+      "link": "https://x.com/arifure_ads/status/2097134469488816203/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098113079049417205",
+      "handle": "PhysicsMagazine",
+      "name": "",
+      "text": "Chaotic quantum systems may carry a permanent birthmark of their starting state. Theorists show the odds of returning to its origin increased by a factor of two compared to any other state — forever. \n\nRead the viewpoint: \nhttps://\ngo.aps.org/3VmxFZY",
+      "time": "2026-09-10T18:15:13.000Z",
+      "link": "https://x.com/PhysicsMagazine/status/2098113079049417205",
+      "rt": false
+    },
+    {
+      "id": "2097881873867473015",
+      "handle": "JoeTegtmeyer",
+      "name": "Joe Tegtmeyer 🚀 🤠🛸😎 reposted",
+      "text": "The Super Heavy for Flight 15 out here at Massey's also had a wonderful smooth cryo test today. We have more vehicle roll action coming in the morning too.\n\nYep, it can be hard to keep up! 😆",
+      "time": "2026-09-10T02:56:30.000Z",
+      "link": "https://x.com/MarcusHouse/status/2097881873867473015",
+      "rt": true
+    },
+    {
+      "id": "2097701690392588483",
+      "handle": "sh_reya",
+      "name": "Shreya Shankar reposted",
+      "text": "At last week's #VLDB26, I gave keynotes @ NOVAS & DashSys workshops about \n@DAP__Lab\n's early work on Agentic Data Environments.   Agent use cases are dragging technology behind it & there are research opportunities everywhere!\n\nAnnotated slides: \nhttps://\neugenewu.net/talks/2026-09-\nagentic-data-envs.html\n…",
+      "time": "2026-09-09T15:00:31.000Z",
+      "link": "https://x.com/sirrice/status/2097701690392588483",
+      "rt": true
+    },
+    {
+      "id": "2097272707117457749",
+      "handle": "SUAPPAI",
+      "name": "",
+      "text": "Modeling all these relief details in SketchUp? 😮‍\n\nJust use a photo.\n\nImage → AI → 3D Model",
+      "time": "",
+      "link": "https://x.com/SUAPPAI/status/2097272707117457749/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098097512544444447",
+      "handle": "karpathy",
+      "name": "Andrej Karpathy reposted",
+      "text": "We're publishing our most detailed threat intelligence report to date. \n\nIt covers how people tried to misuse Claude—for cyberattacks, influence operations, surveillance, biology, and building weapons—and how we found and stopped them.\n\nWe disrupted every operation in the report,",
+      "time": "2026-09-10T17:13:22.000Z",
+      "link": "https://x.com/AnthropicAI/status/2098097512544444447",
+      "rt": true
+    },
+    {
+      "id": "2097490173953012033",
+      "handle": "paulg",
+      "name": "Paul Graham reposted",
+      "text": "Researchers spent 500 hours and $70,000 and found LG TVs logging plain text transcripts in standby, mapping every device in the house, and feeding it to LG's ad arm\n\nUnplug the internet and it saves the files until you plug back in.\n\nLG says its TVs don't record ambient",
+      "time": "2026-09-09T01:00:01.000Z",
+      "link": "https://x.com/MarioNawfal/status/2097490173953012033",
+      "rt": true
+    },
+    {
+      "id": "2089767597478961291",
+      "handle": "DriftVPN",
+      "name": "",
+      "text": "牛来，网来，卡顿别来。\n限速？狗都不碰。",
+      "time": "",
+      "link": "https://x.com/DriftVPN/status/2089767597478961291/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098113068962127969",
+      "handle": "NewsfromScience",
+      "name": "",
+      "text": "Gondwana may be getting a promotion.\n\nLong overshadowed by Pangaea—the supercontinent it would later help form—Gondwana may itself have been a full-fledged supercontinent, according to a new study.\n\nThe researchers say Gondwana, centered around the South Pole, encompassed some",
+      "time": "2026-09-10T18:15:11.000Z",
+      "link": "https://x.com/NewsfromScience/status/2098113068962127969",
+      "rt": false
+    },
+    {
+      "id": "2098196600724107767",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "A dwarf galaxy with big activity: NGC 2366 might lack spiral structure, but it makes up for it with a brilliant, star-forming nebula visible even in fine detail — individual stars and all.\n\n(Credit: NASA & ESA)",
+      "time": "2026-09-10T23:47:06.000Z",
+      "link": "https://x.com/WorldAndScience/status/2098196600724107767",
+      "rt": false
+    },
+    {
+      "id": "2097652513746931987",
+      "handle": "argonne",
+      "name": "",
+      "text": "Adam Szymanski is helping decision-makers see around the corner. As Argonne’s modeling and analytics group lead, he develops tools that support national readiness, logistics and mission planning - \nhttps://\nbit.ly/3VgHNU4",
+      "time": "2026-09-09T11:45:06.000Z",
+      "link": "https://x.com/argonne/status/2097652513746931987",
+      "rt": false
+    },
+    {
+      "id": "2098059150030746107",
+      "handle": "ylecun",
+      "name": "Yann LeCun reposted",
+      "text": "I've just spent 2 hours poring over the scientific literature on the risks of humanity's extinction due to AI. Aside from the fact that there's almost nothing out there, almost everything leads to books and novels, or shortcuts like the \"paperclip\" maximizer, which are above all",
+      "time": "2026-09-10T14:40:56.000Z",
+      "link": "https://x.com/DFintelligence/status/2098059150030746107",
+      "rt": true
+    },
+    {
+      "id": "2098179636089717177",
+      "handle": "TooWhiteToTweet",
+      "name": "",
+      "text": "Just in case it wasn't self-explanatory that the entire point of this assault-on-the-human-psyche-of-a-statue is that it's NOT WHITE, here's CNN's original headline from earlier today, before they changed it:",
+      "time": "2026-09-10T22:39:42.000Z",
+      "link": "https://x.com/TooWhiteToTweet/status/2098179636089717177",
+      "rt": false
+    },
+    {
+      "id": "2098200976608088544",
+      "handle": "elonmusk",
+      "name": "",
+      "text": "Super racist headline. Easy to tell, as the inverse would never be allowed!",
+      "time": "2026-09-11T00:04:30.000Z",
+      "link": "https://x.com/elonmusk/status/2098200976608088544",
+      "rt": false
+    },
+    {
+      "id": "2097865529688219814",
+      "handle": "bznotes",
+      "name": "",
+      "text": "IMHO VC firms investing in competing companies is not going to end well.\n\nIf you are invested in a competitor you cannot fully be trusted with vulnerable truths, esp at critical moments. This is especially true in early stage, but persists long term as well.",
+      "time": "2026-09-10T01:51:33.000Z",
+      "link": "https://x.com/bznotes/status/2097865529688219814",
+      "rt": false
+    },
+    {
+      "id": "2097898606485553347",
+      "handle": "FutureJurvetson",
+      "name": "",
+      "text": "💯",
+      "time": "2026-09-10T04:02:59.000Z",
+      "link": "https://x.com/FutureJurvetson/status/2097898606485553347",
+      "rt": false
+    },
+    {
+      "id": "2057062553910665646",
+      "handle": "notelyvoiceai",
+      "name": "",
+      "text": "Record meetings. Auto-summarise. Detect speakers. Export anywhere. Notely Voice transcribes everything on-device, no cloud, no snooping. $19.99/year.",
+      "time": "",
+      "link": "https://x.com/notelyvoiceai/status/2057062553910665646/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097485352529514727",
+      "handle": "denny_zhou",
+      "name": "Denny Zhou reposted",
+      "text": "Terry Tao is probably the most measured, pro-AI mathematician on the planet - which makes this quote especially concerning to read. 😟\n\nIf sharing your hunches means getting scooped ~immediately without acknowledgement, then we're going to see not just math but all other science",
+      "time": "2026-09-09T00:40:52.000Z",
+      "link": "https://x.com/DynamicWebPaige/status/2097485352529514727",
+      "rt": true
+    },
+    {
+      "id": "2098045970252525878",
+      "handle": "owl_posting",
+      "name": "owl reposted",
+      "text": "On behalf of the Intercept team, I’m excited to share that we’re launching our first “Request for Candidates”! We’re looking for the best science (and teams!) in the world that could plausibly meet our target product concept. Our ultimate goal is to radically reduce the burden of",
+      "time": "2026-09-10T13:48:33.000Z",
+      "link": "https://x.com/incredutility/status/2098045970252525878",
+      "rt": true
+    },
+    {
+      "id": "2098065034148499962",
+      "handle": "universal_sci",
+      "name": "",
+      "text": "This Fossilized Dinosaur Meal May Hold a Clue to Why Birds Survived the Asteroid:",
+      "time": "2026-09-10T15:04:18.000Z",
+      "link": "https://x.com/universal_sci/status/2098065034148499962",
+      "rt": false
+    },
+    {
+      "id": "2071991456957600191",
+      "handle": "IBKR",
+      "name": "",
+      "text": "Experienced traders choose Interactive Brokers. Trade smarter with IBKR.",
+      "time": "",
+      "link": "https://x.com/IBKR/status/2071991456957600191/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097529504658780655",
+      "handle": "XPENG_Global",
+      "name": "",
+      "text": "Real innovation can't be built on slides.\nNo shortcuts, no quick fixes. We believe in getting back up after every fall. \nFor six years, He Xiaopeng has walked side by side with XPENG \nhttps://\nbrnw.ch/21x5xLK\n?twclid=2bj08m2xhh3bn33dzlkbe9pmb\n patient—we take it one step at a time.\n\n$XPEV",
+      "time": "",
+      "link": "https://x.com/XPENG_Global/status/2097529504658780655/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097173961264284039",
+      "handle": "ylecun",
+      "name": "Yann LeCun reposted",
+      "text": "I am seeing claims around LLMs, specifically Astra having made serious progress on robotics. The tasks that are demonstrated are simple pick and place tasks with parallel jaw grippers. LLMs can do planning, and the impressive demos in these tasks primarily show that.  But",
+      "time": "2026-09-08T04:03:30.000Z",
+      "link": "https://x.com/JitendraMalikCV/status/2097173961264284039",
+      "rt": true
+    },
+    {
+      "id": "2071656696154558633",
+      "handle": "ahavpn",
+      "name": "",
+      "text": "AHAspeed 极速 VPN，免费领取周卡！\n\n领取步骤：\n《一》 点击链接进入商店\n《二》 选择「普通周卡」\n《三》 屏幕下方输入优惠券：XFREEWEEK\n《四》 点击购买即可免费领取",
+      "time": "",
+      "link": "https://x.com/ahavpn/status/2071656696154558633/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097746467809091784",
+      "handle": "TheStalwart",
+      "name": "",
+      "text": "This strikes me as something theoretically important that I haven't seen much discourse about. That if we get RSI, then chips/electricity may no longer be a binding constraint, as the model is able to get more and more juice out of a fixed amount of infrastructure",
+      "time": "2026-09-09T17:58:26.000Z",
+      "link": "https://x.com/TheStalwart/status/2097746467809091784",
+      "rt": false
+    },
+    {
+      "id": "2097748586666901663",
+      "handle": "nabeelqu",
+      "name": "",
+      "text": "“Software only singularity” is the term of art for this one, see",
+      "time": "2026-09-09T18:06:52.000Z",
+      "link": "https://x.com/nabeelqu/status/2097748586666901663",
+      "rt": false
+    },
+    {
+      "id": "2097782037872832850",
+      "handle": "john__allard",
+      "name": "",
+      "text": "feeling pretty jaded today. i knew abstractly that humanity would bring its cynicism and tribal memetics along on the way to the singularity, but watching how we’re meeting this moment is getting to me more than i expected",
+      "time": "2026-09-09T20:19:47.000Z",
+      "link": "https://x.com/john__allard/status/2097782037872832850",
+      "rt": false
+    },
+    {
+      "id": "2097854883798085943",
+      "handle": "corbtt",
+      "name": "",
+      "text": "If AI doesn't kill us all it may give us the tools we need to organize a society with a lot less of that.\n\nProgress is possible! The modern world hasany fewer random acts of violence than the world of 1000ad.",
+      "time": "2026-09-10T01:09:15.000Z",
+      "link": "https://x.com/corbtt/status/2097854883798085943",
+      "rt": false
+    },
+    {
+      "id": "2098032715060985908",
+      "handle": "wangzhian8848",
+      "name": "",
+      "text": "小米和苹果，一时竟然分辨不出来谁是谁",
+      "time": "2026-09-10T12:55:53.000Z",
+      "link": "https://x.com/wangzhian8848/status/2098032715060985908",
+      "rt": false
+    },
+    {
+      "id": "2098140775838081339",
+      "handle": "argonne",
+      "name": "",
+      "text": "Strong pathways into science start with firsthand experience. This summer, Argonne’s Taste of Tech and NGenE programs helped students and early-career researchers build connections and explore emerging areas of science and technology - \nhttps://\nbit.ly/4hfPK4o",
+      "time": "2026-09-10T20:05:17.000Z",
+      "link": "https://x.com/argonne/status/2098140775838081339",
+      "rt": false
+    },
+    {
+      "id": "2093000988651405616",
+      "handle": "xiaopenghexpeng",
+      "name": "",
+      "text": "Pedestrians. Bikes. Scooters. Traffic from every direction.\n\nThis is XPENG NGP navigating it all.",
+      "time": "",
+      "link": "https://x.com/xiaopenghexpeng/status/2093000988651405616/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097704389188133281",
+      "handle": "katiewav",
+      "name": "",
+      "text": "huge \n@nabeelqu",
+      "time": "2026-09-09T15:11:14.000Z",
+      "link": "https://x.com/katiewav/status/2097704389188133281",
+      "rt": false
+    },
+    {
+      "id": "2097706202335428936",
+      "handle": "nabeelqu",
+      "name": "",
+      "text": "!!",
+      "time": "2026-09-09T15:18:26.000Z",
+      "link": "https://x.com/nabeelqu/status/2097706202335428936",
+      "rt": false
+    },
+    {
+      "id": "2097618516757119121",
+      "handle": "leijun",
+      "name": "",
+      "text": "Light Khaki, a new color in the Xiaomi SkyNomad Series.\nInspired by the natural colors created by the interplay of earth, gravel, and dust. Understated yet distinctive. Layered with fine pearlescent particles and a soft gloss finish, the body color reveals rich variations under",
+      "time": "2026-09-09T09:30:00.000Z",
+      "link": "https://x.com/leijun/status/2097618516757119121",
+      "rt": false
+    },
+    {
+      "id": "1955729375237685340",
+      "handle": "AbeyFoundation",
+      "name": "",
+      "text": "Want to build a web3 empire but don’t know where to start? \n\nThe Abey ecosystem offers:\n\n· Scalability and interoperability\n· Funding and active community members\n· Innovative contract layer and features\n\nJoin us in revolutionizing interactive web3.",
+      "time": "",
+      "link": "https://x.com/AbeyFoundation/status/1955729375237685340/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098135496920818062",
+      "handle": "paulg",
+      "name": "Paul Graham reposted",
+      "text": "YC's \n@garrytan\n says hard tech startups make up a quarter of the newest 200-company Demo Day batch, up 40x since their low point ~4 years ago:\n\n\"It's 200 companies presenting today. About a quarter of them are hard tech. That's up 40x since our low bar, maybe 3-5 years ago.\"",
+      "time": "2026-09-10T19:44:18.000Z",
+      "link": "https://x.com/tbpn/status/2098135496920818062",
+      "rt": true
+    },
+    {
+      "id": "2098168165905703087",
+      "handle": "universal_sci",
+      "name": "",
+      "text": "This dazzling nebula, Sh2-239, holds two clusters of young, still-embedded stars, along with many stars that are further along in their development.\n\nCredit: T.A. Rector (University of Alaska Anchorage) and H. Schweiker (WIYN and NOIRLab/NSF/AURA)",
+      "time": "2026-09-10T21:54:07.000Z",
+      "link": "https://x.com/universal_sci/status/2098168165905703087",
+      "rt": false
+    },
+    {
+      "id": "2098064571000832129",
+      "handle": "verysmallwoods",
+      "name": "",
+      "text": "DeepSeek 为 V4.1 Flash 及后续模型开源了三个基础设施项目：\n- deepseek-recipe\n\nhttps://\ngithub.com/deepseek-ai/de\nepseek-recipe\n…\nAPI 与模型之间的适配层。负责把 Messages、Chat Completions、Responses 等请求统一成内部对话格式，再编码为 DeepSeek V4／V4.1 使用的 prompt，并将模型输出还原成对应的 API 响应。\n\n-",
+      "time": "2026-09-10T15:02:28.000Z",
+      "link": "https://x.com/verysmallwoods/status/2098064571000832129",
+      "rt": false
+    },
+    {
+      "id": "2098062165596868928",
+      "handle": "JDVance",
+      "name": "",
+      "text": "We love you CK, and miss you every day.",
+      "time": "2026-09-10T14:52:55.000Z",
+      "link": "https://x.com/JDVance/status/2098062165596868928",
+      "rt": false
+    },
+    {
+      "id": "2097940205009592650",
+      "handle": "wangzhian8848",
+      "name": "",
+      "text": "董建华在任期内想推进公屋建设，没想到遭到香港有房产的中产一致反对。香港经济被房产商绑架，他没有想到阻力如此之大。",
+      "time": "2026-09-10T06:48:17.000Z",
+      "link": "https://x.com/wangzhian8848/status/2097940205009592650",
+      "rt": false
+    },
+    {
+      "id": "2097722418551046508",
+      "handle": "MKBHD",
+      "name": "",
+      "text": "Shot on OnePlus 15",
+      "time": "2026-09-09T16:22:53.000Z",
+      "link": "https://x.com/MKBHD/status/2097722418551046508",
+      "rt": false
+    },
+    {
+      "id": "2097004828950135196",
+      "handle": "LisaHostCom",
+      "name": "",
+      "text": "AI API 调试慢、模型部署总超时？\n\n用原生 IP VPS 搭建稳定的 Linux + Docker 开发环境。\nNVMe 存储｜多地区节点｜自动开通",
+      "time": "",
+      "link": "https://x.com/LisaHostCom/status/2097004828950135196/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097627012223705535",
+      "handle": "xDinoDeer",
+      "name": "",
+      "text": "某东会是下一个苏宁。\n\n不懂得收，主业又不能为主子稳定收租的暴发户，总想着利用权力去资本收割。\n\n这种是没有坐稳的奴才，最容易被丢弃。",
+      "time": "2026-09-09T10:03:46.000Z",
+      "link": "https://x.com/xDinoDeer/status/2097627012223705535",
+      "rt": false
+    },
+    {
+      "id": "2098115287295881517",
+      "handle": "JoeTegtmeyer",
+      "name": "Joe Tegtmeyer 🚀 🤠🛸😎 reposted",
+      "text": "Last week, we showed you all four RS-25 engines installed on the \n@NASAArtemis\n III rocket core stage. Now see all the work behind the scenes.\n\nThese engines will help launch the Orion spacecraft and its crew into low Earth orbit, generating more than two million pounds of thrust",
+      "time": "2026-09-10T18:24:00.000Z",
+      "link": "https://x.com/NASAKennedy/status/2098115287295881517",
+      "rt": true
+    },
+    {
+      "id": "2098060747422957944",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "Mercury Has Been Shrinking for Billions of Years. \n\nScientists May Have Underestimated How Much...",
+      "time": "2026-09-10T14:47:16.000Z",
+      "link": "https://x.com/WorldAndScience/status/2098060747422957944",
+      "rt": false
+    },
+    {
+      "id": "2059473580434534442",
+      "handle": "okywq_app",
+      "name": "",
+      "text": "专为品质男士打造的女神自用闲置衣物交易平台，每一件都带着独特的魅力！实名女神保障真实性，支持同城闪送和当面提货，让你购物无忧又便捷。即刻下载，开启你的闲置衣物寻宝之旅吧！",
+      "time": "",
+      "link": "https://x.com/okywq_app/status/2059473580434534442/analytics",
+      "rt": false
+    },
+    {
+      "id": "1909309252893618645",
+      "handle": "elonmusk",
+      "name": "Elon Musk reposted",
+      "text": "How Storm Watch works",
+      "time": "2025-04-07T18:16:13.000Z",
+      "link": "https://x.com/teslaenergy/status/1909309252893618645",
+      "rt": true
+    },
+    {
+      "id": "2098116239000228161",
+      "handle": "POTUS",
+      "name": "President Donald J. Trump reposted",
+      "text": "President Trump Delivers Remarks, Sep. 10, 2026",
+      "time": "2026-09-10T18:27:47.000Z",
+      "link": "https://x.com/WhiteHouse/status/2098116239000228161",
+      "rt": true
+    },
+    {
+      "id": "2098133056628703602",
+      "handle": "McFaul",
+      "name": "",
+      "text": "On television with a channel based in Kyiv today and was in awe of the host’s resilience and humor as her city was being attacked as we spoke.",
+      "time": "2026-09-10T19:34:36.000Z",
+      "link": "https://x.com/McFaul/status/2098133056628703602",
+      "rt": false
+    },
+    {
+      "id": "2093225981976981664",
+      "handle": "mycodemc",
+      "name": "",
+      "text": "測過那麼多次MBTI，你知道自己在最新64人格裡算哪一階嗎？\n是走在路上隨便抓都一堆的「國民基礎款」，還是萬里挑一的「盲盒隱藏款」？\n這次更新新增 「果斷A／糾結O」、「高冷C／溫暖H」 兩對維度，精準度高到讓你原地破防！\n還沒測最新版的趕快跟上！別等大家都換了人設，只有你還在用舊版的標籤～",
+      "time": "",
+      "link": "https://x.com/mycodemc/status/2093225981976981664/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097745533775589790",
+      "handle": "MKBHD",
+      "name": "",
+      "text": "iPhone Duo",
+      "time": "2026-09-09T17:54:44.000Z",
+      "link": "https://x.com/MKBHD/status/2097745533775589790",
+      "rt": false
+    },
+    {
+      "id": "2098100142108766466",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "A striking contrast in the Milky Way! \n\nThe bright star cluster NGC 6520 beside the strangely shaped dark cloud known as Barnard 86, set against one of the most densely packed star fields in the Milky Way...\n\n(Video by WorldAndScience - Credit: ESO)",
+      "time": "2026-09-10T17:23:49.000Z",
+      "link": "https://x.com/WorldAndScience/status/2098100142108766466",
+      "rt": false
+    },
+    {
+      "id": "2097671173001847199",
+      "handle": "SunSonVPN",
+      "name": "",
+      "text": "光子VPN 免费试用 一键连接 秒开视频",
+      "time": "",
+      "link": "https://x.com/SunSonVPN/status/2097671173001847199/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098078039028412900",
+      "handle": "DeryaTR_",
+      "name": "",
+      "text": "Every cult, ideological or jihadist movement needs its martyrs, driven by absolute conviction.",
+      "time": "2026-09-10T15:55:59.000Z",
+      "link": "https://x.com/DeryaTR_/status/2098078039028412900",
+      "rt": false
+    },
+    {
+      "id": "2098068768932954342",
+      "handle": "PhysicsMagazine",
+      "name": "",
+      "text": "A crystal with special geometric properties can emit light in any polarization just by tuning a laser with two light fields. The method uses quantum geometry and works on femtosecond timescales. Read the synopsis: \nhttps://\ngo.aps.org/4xIHb85",
+      "time": "2026-09-10T15:19:09.000Z",
+      "link": "https://x.com/PhysicsMagazine/status/2098068768932954342",
+      "rt": false
+    },
+    {
+      "id": "2098080619624300620",
+      "handle": "Orbital_Ind",
+      "name": "Orbital Industries reposted",
+      "text": "The hardware team gathered in our San Francisco office for a workshop focused on our two-phase direct-to-chip cooling system.\n\nTwo-phase works because boiling moves far more heat per unit of coolant than a temperature rise does. The hard part is everything around that. \n\nThe",
+      "time": "2026-09-10T16:06:14.000Z",
+      "link": "https://x.com/OrbitalITGlobal/status/2098080619624300620",
+      "rt": true
+    },
+    {
+      "id": "2096792880690201032",
+      "handle": "kusuriya_kiinfo",
+      "name": "",
+      "text": "Enjoy the apothecary's world in the game!\n\nHit anime \"\"The Apothecary Diaries\"\" gets its browser game spin-off!\n- Free to play\n- No downloads required\n- 35+ beloved characters to discover\n\nPlay now!",
+      "time": "",
+      "link": "https://x.com/kusuriya_kiinfo/status/2096792880690201032/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097512830341628122",
+      "handle": "jefflijun",
+      "name": "",
+      "text": "举起搂钱的耙子，挣世界首富发的低保",
+      "time": "2026-09-09T02:30:03.000Z",
+      "link": "https://x.com/jefflijun/status/2097512830341628122",
+      "rt": false
+    },
+    {
+      "id": "2097527380583817344",
+      "handle": "john__allard",
+      "name": "",
+      "text": "new SOTA on wife-guy eval (\n@courtneybellea\n)",
+      "time": "2026-09-09T03:27:52.000Z",
+      "link": "https://x.com/john__allard/status/2097527380583817344",
+      "rt": false
+    },
+    {
+      "id": "2097682209495036409",
+      "handle": "corbtt",
+      "name": "",
+      "text": "Huge congratulations John!!!",
+      "time": "2026-09-09T13:43:06.000Z",
+      "link": "https://x.com/corbtt/status/2097682209495036409",
+      "rt": false
+    },
+    {
+      "id": "2098203738205024315",
+      "handle": "dotey",
+      "name": "",
+      "text": "这期播客是 The Pragmatic Engineer 对 OpenAI Codex 团队负责人 Thibault（Tibo）的访谈，聊了 Codex 的诞生、技术决策、工程文化以及软件开发方式的变迁。\n\n以下是核心要点：\n\n个人经历与加入 OpenAI\n\nThibault",
+      "time": "2026-09-11T00:15:28.000Z",
+      "link": "https://x.com/dotey/status/2098203738205024315",
+      "rt": false
+    },
+    {
+      "id": "2097768113567944799",
+      "handle": "MKBHD",
+      "name": "",
+      "text": "I just want to say it's objectively hilarious that Apple makes a product called the Neo and the Duo in 2026. If you know you know",
+      "time": "2026-09-09T19:24:27.000Z",
+      "link": "https://x.com/MKBHD/status/2097768113567944799",
+      "rt": false
+    },
+    {
+      "id": "2091898127120990475",
+      "handle": "jetbrains",
+      "name": "",
+      "text": "AI pressure is multiplying. New models, constant updates, evolving development workflows. But you have code to ship.\nNow, lean back. With IntelliJ IDEA, AI lives where we code. It brings IDE intelligence to you and your agents so you can own the result and ship with confidence.",
+      "time": "",
+      "link": "https://x.com/jetbrains/status/2091898127120990475/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097270161787203801",
+      "handle": "cz_binance",
+      "name": "CZ 🔶 BNB reposted",
+      "text": "你们知道吗CZ创办的免费教育平台叫 Giggle Academy（咯咯学院）。\n截至2026年8月底至9月初，该平台已为全球 超过150万名儿童 提供免费教育\n平台于2024年3月由CZ \n@cz_binance",
+      "time": "2026-09-08T10:25:46.000Z",
+      "link": "https://x.com/zhuifei008/status/2097270161787203801",
+      "rt": true
+    },
+    {
+      "id": "2078055349454856539",
+      "handle": "isolvedagi2",
+      "name": "",
+      "text": "'Hebb Rule is enough' is the best approach to AGI in the world. Spend 5 mins on TLDR/FAQ.\nUnsupervised Hebbian SNN creates iow maximises subjective higher order novelty by default.",
+      "time": "",
+      "link": "https://x.com/isolvedagi2/status/2078055349454856539/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098056534743781888",
+      "handle": "J_A_C_S",
+      "name": "",
+      "text": "Prof. Marique Aucamp (University of the Western Cape) on stage, exploring how supramolecular chemistry is unlocking smarter, more effective drug formulations, enhancing bioavailability & paving the way for affordable, patient-centered healthcare solutions.\n\n#ACS150 #JACSSymposium",
+      "time": "2026-09-10T14:30:32.000Z",
+      "link": "https://x.com/J_A_C_S/status/2098056534743781888",
+      "rt": false
+    },
+    {
+      "id": "2098168394063245706",
+      "handle": "NewsfromScience",
+      "name": "",
+      "text": "From architecture to political power, hallucinogens and other psychoactive substances influenced everything in ancient Andean civilization. #LongReads",
+      "time": "2026-09-10T21:55:01.000Z",
+      "link": "https://x.com/NewsfromScience/status/2098168394063245706",
+      "rt": false
+    },
+    {
+      "id": "2097511774564356410",
+      "handle": "raycat2021",
+      "name": "",
+      "text": "金融记者出身的迪伦-拉蒂根将2008年金融危机评价为史上最无耻的骗局和抢劫。\n他举了个例子：一个社区有500套房子，每套值100美元，突然危机来了，价格跌到10美元。\n市场崩溃，所有人都没钱了，市场没了交易。",
+      "time": "2026-09-09T02:25:51.000Z",
+      "link": "https://x.com/raycat2021/status/2097511774564356410",
+      "rt": false
+    },
+    {
+      "id": "2097840681633128625",
+      "handle": "haus__verbot",
+      "name": "",
+      "text": "Ambient soundscapes to guide you.",
+      "time": "",
+      "link": "https://x.com/haus__verbot/status/2097840681633128625/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098120843167768776",
+      "handle": "Tesla",
+      "name": "",
+      "text": "With \n@Cybertruck\n, we introduced & scaled many automotive firsts\n\n48V architecture: 4x lower current that enables thinner, lighter wiring\n\nTrue Steer-by-Wire with no mechanical steering link, enabling variable steering response\n\nCombined with rear-wheel steering, this also brought",
+      "time": "2026-09-10T18:46:04.000Z",
+      "link": "https://x.com/Tesla/status/2098120843167768776",
+      "rt": false
+    },
+    {
+      "id": "2094227496417849749",
+      "handle": "fabrice_mayrand",
+      "name": "",
+      "text": "We built the cheapest AI Router \n\nEvery model is discounted up to 81%! \n\nZDR is available\n\nTry it ->  \nhttps://\nCheaperInference.com",
+      "time": "",
+      "link": "https://x.com/fabrice_mayrand/status/2094227496417849749/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097890812008743234",
+      "handle": "NewsfromScience",
+      "name": "",
+      "text": "It sounds like an orca rampage. Over the past 6 years, killer whales have been ramming boats off the coasts of Spain and Portugal, sinking nine, and parading fiberglass remnants around like trophies. Vessels are frequently towed into shipyards with tooth rakes on their undersides",
+      "time": "2026-09-10T03:32:01.000Z",
+      "link": "https://x.com/NewsfromScience/status/2097890812008743234",
+      "rt": false
+    },
+    {
+      "id": "2097873474513457624",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "Which sci-fi movie do you never get tired of rewatching?",
+      "time": "2026-09-10T02:23:07.000Z",
+      "link": "https://x.com/WorldAndScience/status/2097873474513457624",
+      "rt": false
+    },
+    {
+      "id": "2097994675848110283",
+      "handle": "veritasium",
+      "name": "",
+      "text": "Inside CERN's Antimatter Factory...\n#veritasium #science #physics #antimatter",
+      "time": "2026-09-10T10:24:44.000Z",
+      "link": "https://x.com/veritasium/status/2097994675848110283",
+      "rt": false
+    },
+    {
+      "id": "2097809525952618800",
+      "handle": "verysmallwoods",
+      "name": "",
+      "text": "虽然 agent 早已不是新概念，虽然市场中早已巨头林立。但自己尽可能从头搓一个 agent 出来（借 AI 之手），还是蛮有趣的。\n\n这个过程，让我对 codex, pi, dsh 究竟是怎么工作的，慢慢清楚了起来。",
+      "time": "2026-09-09T22:09:01.000Z",
+      "link": "https://x.com/verysmallwoods/status/2097809525952618800",
+      "rt": false
+    },
+    {
+      "id": "2098043646037950756",
+      "handle": "elonmusk",
+      "name": "",
+      "text": "True 😂",
+      "time": "2026-09-10T13:39:19.000Z",
+      "link": "https://x.com/elonmusk/status/2098043646037950756",
+      "rt": false
+    },
+    {
+      "id": "2098123618961993901",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "Amazing: The Chamaeleon I Dark Cloud, the closest region where stars are born.\n\nCredit: CTIO/NOIRLab/DOE/NSF/AURA - Image Processing: T.A. Rector (University of Alaska Anchorage/NSF NOIRLab), M. Zamani & D. de Martin (NSF NOIRLab)",
+      "time": "2026-09-10T18:57:06.000Z",
+      "link": "https://x.com/WorldAndScience/status/2098123618961993901",
+      "rt": false
+    },
+    {
+      "id": "2097542165966811235",
+      "handle": "ShenSeanChen",
+      "name": "",
+      "text": "I just met our investors in SF from \n@CharacterCap\n (Character Labs), the only startup accelerator that’s 100% focused on PMF.\n\nIf you’re building a startup, you should apply immediately. Deadline is Sept 23: \nhttps://\ncontact.character.vc/labs\n\nIf you can explain what you learned from my",
+      "time": "2026-09-09T04:26:37.000Z",
+      "link": "https://x.com/ShenSeanChen/status/2097542165966811235",
+      "rt": false
+    },
+    {
+      "id": "2096244858222690455",
+      "handle": "StringAI_global",
+      "name": "",
+      "text": "还在承担高昂的 API 接口费用？💸\n来 String AI，GPT-6 Astra 成本直降 97%！\n输出：¥335.50 降至 ¥7.50\n缓存命中：低至 ¥0.15\n完全兼容，改一行代码极速接入。用极低价格享受同等顶尖能力。点击立即开启！",
+      "time": "",
+      "link": "https://x.com/StringAI_global/status/2096244858222690455/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098071570400846291",
+      "handle": "NewsfromScience",
+      "name": "",
+      "text": "Scientists seeking to make a dry academic paper more engaging often get by with a little help from the Beatles, according to a new study.\n\nThe Fab Four are referenced here, there, and everywhere in the scientific literature, the researchers find, with the titles of at least 3200",
+      "time": "2026-09-10T15:30:17.000Z",
+      "link": "https://x.com/NewsfromScience/status/2098071570400846291",
+      "rt": false
+    },
+    {
+      "id": "2097396400221040825",
+      "handle": "cation_motion",
+      "name": "Gravitational Lens reposted",
+      "text": "这里有一个瓜，中文区只有很少讨论。\n---------------------------------------\n🚨 刚刚，数学史与 AI 史迎来了真正的 “深蓝时刻”—— 但伴随它的，却是一场极其丑陋的学术霸凌与大厂偷家风暴。 🍿\nOpenAI 刚刚突击官宣：其内部下一代模型驱动的上万名 Agent 军团，攻克了百年千禧年数学难题之一的",
+      "time": "2026-09-08T18:47:24.000Z",
+      "link": "https://x.com/riba2534/status/2097396400221040825",
+      "rt": true
+    },
+    {
+      "id": "2097725862384992372",
+      "handle": "bryan_johnson",
+      "name": "",
+      "text": "New PR: 405 lbs (+20 lbs from last week)\n\n> 2.25x body weight\n> increased range of motion, one less plate\n> achieved required strength to dunk\n> now need explosiveness \n\n> 49 yrs old\n>6’0” \n>180 lbs\n> standing reach: 91” (7’7”)\n> basketball rim: 120” (10’)\n> needed vertical: ~35”",
+      "time": "2026-09-09T16:36:34.000Z",
+      "link": "https://x.com/bryan_johnson/status/2097725862384992372",
+      "rt": false
+    },
+    {
+      "id": "2098038952284586282",
+      "handle": "elonmusk",
+      "name": "",
+      "text": "Grok \n@Bot",
+      "time": "2026-09-10T13:20:40.000Z",
+      "link": "https://x.com/elonmusk/status/2098038952284586282",
+      "rt": false
+    },
+    {
+      "id": "2033592272021856475",
+      "handle": "IBKR",
+      "name": "",
+      "text": "Scan the globe for the best stocks to invest in with GlobalAnalyst.",
+      "time": "",
+      "link": "https://x.com/IBKR/status/2033592272021856475/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098010594498539562",
+      "handle": "techreview",
+      "name": "",
+      "text": "A new report from the nonprofit Reflective lays out the experiments needed to better understand our ability to dim the sun.",
+      "time": "2026-09-10T11:27:59.000Z",
+      "link": "https://x.com/techreview/status/2098010594498539562",
+      "rt": false
+    },
+    {
+      "id": "2097406461118943599",
+      "handle": "denny_zhou",
+      "name": "Denny Zhou reposted",
+      "text": "Today we launched \nhttps://\nmuse.ai, a personal AI agent, and published a deep dive on how we built safety into its system.\n\nAn agent that gets to know you over time necessarily holds a lot of context about you. That's the source of its usefulness and the reason we built",
+      "time": "2026-09-08T19:27:22.000Z",
+      "link": "https://x.com/AIatMeta/status/2097406461118943599",
+      "rt": true
+    },
+    {
+      "id": "2096833935942823960",
+      "handle": "mollysim26",
+      "name": "",
+      "text": "美国 T-Mobile 实体电话卡 · 官方正品全球直邮\n\n· $3/月 超低资费长期保号\n· 原生美国 +1 手机号，各大银行、券商及美区账号绑定首选\n· 开启 WiFi-Calling 在国内无漫游费接收短信与通话\n· 实体电话卡即插即用，支持官方 App 转 eSIM\n\n立即前往官方选购：\nhttps://\nmollysim.com/zh-cn/sim/t-mo\nbile?twclid=24xcnggdg92ku11qi0wskzgfzl\n…",
+      "time": "",
+      "link": "https://x.com/mollysim26/status/2096833935942823960/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098072752792244390",
+      "handle": "lancedb",
+      "name": "",
+      "text": "Physical AI data mining is becoming one of the most important infrastructure problems in robotics and autonomous systems.\n\nAs models improve, the useful training examples get rarer and harder to find across massive fleets.\n\n\n@eddyxu\n breaks down what it takes to find those",
+      "time": "2026-09-10T15:34:59.000Z",
+      "link": "https://x.com/lancedb/status/2098072752792244390",
+      "rt": false
+    },
+    {
+      "id": "2097359468963004826",
+      "handle": "ylecun",
+      "name": "Yann LeCun reposted",
+      "text": "Today, we’re launching Voice Design.  \n\nWrite a prompt, create a voice.  \n\nDescribe the accent, age, gender, and pace your use case needs, and get new voices in seconds, ready to use.  \n\nLive and free in the Gradium API and Studio. \nhttps://\ngradium.link/voice-design",
+      "time": "2026-09-08T16:20:39.000Z",
+      "link": "https://x.com/GradiumAI/status/2097359468963004826",
+      "rt": true
+    },
+    {
+      "id": "2098062226855022687",
+      "handle": "McFaul",
+      "name": "",
+      "text": "As the 25th anniversary of 9/11/2001 approaches, I am reflecting on what I got right and what I got wrong about international politics over the last quarter century.\n\nHere is the first piece I wrote after 9/11 in \n@washingtonpost\n on 9/22/2001 called  \"To Fight a New 'ism',\"",
+      "time": "2026-09-10T14:53:09.000Z",
+      "link": "https://x.com/McFaul/status/2098062226855022687",
+      "rt": false
+    },
+    {
+      "id": "2087266777281503622",
+      "handle": "CMEGroup",
+      "name": "",
+      "text": "準備好應對黃金市場波動？立即參與模擬交易挑戰，測試您的黃金部署。",
+      "time": "",
+      "link": "https://x.com/CMEGroup/status/2087266777281503622/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097807793092743347",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "Research Reveals Why Some Megalodons Became Absolute Giants:",
+      "time": "2026-09-09T22:02:07.000Z",
+      "link": "https://x.com/WorldAndScience/status/2097807793092743347",
+      "rt": false
+    },
+    {
+      "id": "2098065061185208550",
+      "handle": "McFaul",
+      "name": "",
+      "text": "This also is not my book!\n\nBut I love the subtitle-- \"How Michael McFaul's Methods Can Help You Reach Your Goals.\"",
+      "time": "2026-09-10T15:04:25.000Z",
+      "link": "https://x.com/McFaul/status/2098065061185208550",
+      "rt": false
+    },
+    {
+      "id": "2097563919883604171",
+      "handle": "TimothyDuignan",
+      "name": "Tim Duignan reposted",
+      "text": "Physicists should put together a list of mathematically well-defined problems that could advance the field. Such as, eg, what constitutes a low-temperature superconductor, what are the lattice conditions for cold fusion (or why do they not exist), what is a local completion of",
+      "time": "2026-09-09T05:53:04.000Z",
+      "link": "https://x.com/skdh/status/2097563919883604171",
+      "rt": true
+    },
+    {
+      "id": "2098062316268827062",
+      "handle": "jordanbpeterson",
+      "name": "Dr Jordan B Peterson reposted",
+      "text": "Essay back to school sale is on! \nSave 40% on Essay plans until September 18th\nGet the academic tools you need to excel this semester\nTry Essay for free: \nhttps://\ntry.essay.app/back-to-school",
+      "time": "2026-09-10T14:53:30.000Z",
+      "link": "https://x.com/essay_app/status/2098062316268827062",
+      "rt": true
+    },
+    {
+      "id": "2086066700320133305",
+      "handle": "crosswall8",
+      "name": "",
+      "text": "🚀 CrossWall 高速大流量机场 \n\n• 高性价比：低至60元/年，大流量畅享\n\n• 极速体验：国际优质线路，4K视频秒开\n\n• 全网解锁：支持流媒体与AI工具\n\n• 全端兼容：手机/电脑/平板通用",
+      "time": "",
+      "link": "https://x.com/crosswall8/status/2086066700320133305/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097886934509260911",
+      "handle": "chasen_liao",
+      "name": "",
+      "text": "这个 context-mode 的实现原理让我想到了 DeepSeek Harness 的 PTC 模式，思路是相通的 👇\n\nPTC 模式允许 Agent 通过 JS 代码来串联多个工具结果，也可以在代码中编写筛选逻辑，只不过 PTC 是一次执行结果就定死了，Agent 没办法找到那些工具的原始输出\n\ncontext-mode",
+      "time": "2026-09-10T03:16:36.000Z",
+      "link": "https://x.com/chasen_liao/status/2097886934509260911",
+      "rt": false
+    },
+    {
+      "id": "2097935505677816220",
+      "handle": "waku_agent",
+      "name": "",
+      "text": "https://\nwaku.one\n\nhttps://\ngithub.com/shenseanchen/w\naku-agent\n…",
+      "time": "2026-09-10T06:29:36.000Z",
+      "link": "https://x.com/waku_agent/status/2097935505677816220",
+      "rt": false
+    },
+    {
+      "id": "2097936926624141424",
+      "handle": "ShenSeanChen",
+      "name": "",
+      "text": "Let’s goooo!",
+      "time": "2026-09-10T06:35:15.000Z",
+      "link": "https://x.com/ShenSeanChen/status/2097936926624141424",
+      "rt": false
+    },
+    {
+      "id": "2097884487455834543",
+      "handle": "elonmusk",
+      "name": "",
+      "text": "And \n@Grok\n \n@Bot\n gets better almost every day",
+      "time": "2026-09-10T03:06:53.000Z",
+      "link": "https://x.com/elonmusk/status/2097884487455834543",
+      "rt": false
+    },
+    {
+      "id": "2097993592996245599",
+      "handle": "techreview",
+      "name": "",
+      "text": "Energy storage is currently booming, largely thanks to cheap Chinese cells.",
+      "time": "2026-09-10T10:20:26.000Z",
+      "link": "https://x.com/techreview/status/2097993592996245599",
+      "rt": false
+    },
+    {
+      "id": "2098064634792366090",
+      "handle": "McFaul",
+      "name": "",
+      "text": "This is not my book!  It's an AI-generated \"summary\" of my book on sale on Amazon.",
+      "time": "2026-09-10T15:02:43.000Z",
+      "link": "https://x.com/McFaul/status/2098064634792366090",
+      "rt": false
+    },
+    {
+      "id": "2097838473579237437",
+      "handle": "DeryaTR_",
+      "name": "",
+      "text": "Added more context. Join the resistance to fight for the golden age: humanity uplifted with AI!",
+      "time": "2026-09-10T00:04:02.000Z",
+      "link": "https://x.com/DeryaTR_/status/2097838473579237437",
+      "rt": false
+    },
+    {
+      "id": "2097559641731584273",
+      "handle": "op7418",
+      "name": "",
+      "text": "我去，OpenAI 的算力都不够了吗？\n\nTibo 说如果 GPT-6 的使用量再增长的话，他们有可能会暂停新增 Pro 的订阅。\n\n没买的或者想买的可以先抓紧买一个哈，不然买不了就完蛋了",
+      "time": "2026-09-09T05:36:04.000Z",
+      "link": "https://x.com/op7418/status/2097559641731584273",
+      "rt": false
+    },
+    {
+      "id": "2097564076214010062",
+      "handle": "op7418",
+      "name": "",
+      "text": "还能逼单的",
+      "time": "2026-09-09T05:53:41.000Z",
+      "link": "https://x.com/op7418/status/2097564076214010062",
+      "rt": false
+    },
+    {
+      "id": "2097611370074374279",
+      "handle": "Vincent_Song",
+      "name": "",
+      "text": "大理理想山重力卡丁车…好玩…",
+      "time": "2026-09-09T09:01:37.000Z",
+      "link": "https://x.com/Vincent_Song/status/2097611370074374279",
+      "rt": false
+    },
+    {
+      "id": "2097833047630786630",
+      "handle": "oran_ge",
+      "name": "",
+      "text": "当时差点摔出去，还挺刺激的",
+      "time": "2026-09-09T23:42:29.000Z",
+      "link": "https://x.com/oran_ge/status/2097833047630786630",
+      "rt": false
+    },
+    {
+      "id": "2097878644257657280",
+      "handle": "jietang",
+      "name": "",
+      "text": "Add oil and Happy Teacher's Day",
+      "time": "2026-09-10T02:43:40.000Z",
+      "link": "https://x.com/jietang/status/2097878644257657280",
+      "rt": false
+    },
+    {
+      "id": "2097880613969858755",
+      "handle": "hxiao",
+      "name": "",
+      "text": "唐老师 教师节快乐！",
+      "time": "2026-09-10T02:51:29.000Z",
+      "link": "https://x.com/hxiao/status/2097880613969858755",
+      "rt": false
+    },
+    {
+      "id": "2041409718204436710",
+      "handle": "vpnjiasuqi888",
+      "name": "",
+      "text": "飞鸟VPN，飞一般的VPN\n一键连接，200+节点畅游海外\n支持安卓/苹果/电脑/Mac平台使用\n无限流量，点击下载注册，立即免费试用",
+      "time": "",
+      "link": "https://x.com/vpnjiasuqi888/status/2041409718204436710/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097618339166089249",
+      "handle": "shufen46250836",
+      "name": "",
+      "text": "今天A股高开低走，创业板指数盘中跌破5日线，在外围市场科技板块大涨的背景下，A股这种表现属实独具一格，\n\n目前A股上不去下不来，量能始终在1.9万亿左右，量能震荡筑底，好吧，我再信一阵子，主力资金在等消化抛压筹码肃清",
+      "time": "2026-09-09T09:29:18.000Z",
+      "link": "https://x.com/shufen46250836/status/2097618339166089249",
+      "rt": false
+    },
+    {
+      "id": "2098019134411874305",
+      "handle": "POTUS",
+      "name": "President Donald J. Trump reposted",
+      "text": "One year ago, we tragically lost a fearless patriot. A champion for freedom and for our country. \n\nCharlie Kirk changed the course of American history. His courage, conviction, and love of country will never be forgotten. ❤️\n\n\"Well done, good and faithful servant\"",
+      "time": "2026-09-10T12:01:55.000Z",
+      "link": "https://x.com/WhiteHouse/status/2098019134411874305",
+      "rt": true
+    },
+    {
+      "id": "2075351356857057601",
+      "handle": "IBKR",
+      "name": "",
+      "text": "Don't pay the spread. Use 100+ order types and algorithms for precise execution on Interactive Brokers.",
+      "time": "",
+      "link": "https://x.com/IBKR/status/2075351356857057601/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097451386787307855",
+      "handle": "TimothyDuignan",
+      "name": "",
+      "text": "Very well put",
+      "time": "2026-09-08T22:25:54.000Z",
+      "link": "https://x.com/TimothyDuignan/status/2097451386787307855",
+      "rt": false
+    },
+    {
+      "id": "2097894048220766712",
+      "handle": "hxiao",
+      "name": "",
+      "text": "Fable 5.1 obsession with bash has gone pathological: asking me to approve a 2-page bash cmd with one \"rm\" buried in the middle.",
+      "time": "2026-09-10T03:44:52.000Z",
+      "link": "https://x.com/hxiao/status/2097894048220766712",
+      "rt": false
+    },
+    {
+      "id": "2098113312890499453",
+      "handle": "saranormous",
+      "name": "",
+      "text": "there is more real m&a interest in the last 6m than in the last few years before. scale ups are hungry, and some incumbents have woken up",
+      "time": "2026-09-10T18:16:09.000Z",
+      "link": "https://x.com/saranormous/status/2098113312890499453",
+      "rt": false
+    },
+    {
+      "id": "2080169906478408177",
+      "handle": "lantianvpn",
+      "name": "",
+      "text": "蓝天云VPN\n新用户体验套餐白嫖优惠码：skyline\n\n- 支持多设备同时使用\n- 支持ChatGPT，AI，流媒体类应用\n- 提供双ISP家宽住宅型节点\n- 4K视频流畅播放",
+      "time": "",
+      "link": "https://x.com/lantianvpn/status/2080169906478408177/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097745293857144956",
+      "handle": "thesamparr",
+      "name": "",
+      "text": "Before the 900, Tony's success rate on that trick was 0%. Every full attempt in his life had ended in him getting hurt.\n\nHis mindset on top of the ramp: \"I'm either going to make this trick or you're going to carry me unconscious out of this arena.\"",
+      "time": "2026-09-09T17:53:46.000Z",
+      "link": "https://x.com/thesamparr/status/2097745293857144956",
+      "rt": false
+    },
+    {
+      "id": "2098124882559353166",
+      "handle": "Tesla",
+      "name": "",
+      "text": "Cybertruck Powershare now available for Powerwall 3 owners",
+      "time": "2026-09-10T19:02:07.000Z",
+      "link": "https://x.com/Tesla/status/2098124882559353166",
+      "rt": false
+    },
+    {
+      "id": "2097976056506392917",
+      "handle": "J_A_C_S",
+      "name": "",
+      "text": "Prof. Adrienne Edkins (Rhodes University, South Africa) is presenting research on a new inhibitor that targets KSHV replication, offering promising new approaches for treating Kaposi sarcoma and related cancers.\n\n#ACS150 #JACSSymposium",
+      "time": "2026-09-10T09:10:45.000Z",
+      "link": "https://x.com/J_A_C_S/status/2097976056506392917",
+      "rt": false
+    },
+    {
+      "id": "2094136192392659333",
+      "handle": "POLYSTRIKE",
+      "name": "",
+      "text": "最近玩這款遊戲，比玩任何 3A 大作都還要開心！",
+      "time": "",
+      "link": "https://x.com/POLYSTRIKE/status/2094136192392659333/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097841377283322190",
+      "handle": "POTUS",
+      "name": "President Donald J. Trump reposted",
+      "text": "Liberty has prevailed here because of the culture and character of the people who declared it, defended it, and preserved it.\n\nThis is our history. This is America’s destiny: to be the greatest, most extraordinary country ever to grace the Earth. 🇺🇸",
+      "time": "2026-09-10T00:15:35.000Z",
+      "link": "https://x.com/WhiteHouse/status/2097841377283322190",
+      "rt": true
+    },
+    {
+      "id": "2095419525604753583",
+      "handle": "ChainstackHQ",
+      "name": "",
+      "text": "Your infrastructure. Your data. Your Solana RPC node. \n\nChainstack Self-Hosted makes it easier to deploy, monitor, and keep running, for free.",
+      "time": "",
+      "link": "https://x.com/ChainstackHQ/status/2095419525604753583/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098060789278253187",
+      "handle": "McFaul",
+      "name": "",
+      "text": "",
+      "time": "2026-09-10T14:47:26.000Z",
+      "link": "https://x.com/McFaul/status/2098060789278253187",
+      "rt": false
+    },
+    {
+      "id": "2097645365168427211",
+      "handle": "wshuyi",
+      "name": "",
+      "text": "GPT-Image-2.5 已同步上线 labnana & listenhub\n新用户注册免费 50 张\n签到赠送 10 张\n免费额度有效期 3 天， 活动持续 2 天 \n@oran_ge",
+      "time": "2026-09-09T11:16:42.000Z",
+      "link": "https://x.com/wshuyi/status/2097645365168427211",
+      "rt": false
+    },
+    {
+      "id": "2097660059551739908",
+      "handle": "oran_ge",
+      "name": "",
+      "text": "shuyi老师比官方都快。。。",
+      "time": "2026-09-09T12:15:05.000Z",
+      "link": "https://x.com/oran_ge/status/2097660059551739908",
+      "rt": false
+    },
+    {
+      "id": "2098139240039387451",
+      "handle": "GuangyuRobert",
+      "name": "Robert Yang reposted",
+      "text": "ADBE is about to report earnings. I wanted to see if I could accurately predict earnings without access to proprietary or private data sources. Shortcut one shotted this full operating model build and sent swarms of agents to scour public data for anything that would let me",
+      "time": "2026-09-10T19:59:11.000Z",
+      "link": "https://x.com/phamrich_/status/2098139240039387451",
+      "rt": true
+    },
+    {
+      "id": "2069508838555013563",
+      "handle": "brilliantlabsAR",
+      "name": "",
+      "text": "Not a marketing claim. Not a roadmap item. Order now. \nhttp://\nbrilliant.xyz\n/?twclid=24shqezpktwg1axpxgt1cgxh9v",
+      "time": "",
+      "link": "https://x.com/brilliantlabsAR/status/2069508838555013563/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097437745261985984",
+      "handle": "POTUS",
+      "name": "President Donald J. Trump reposted",
+      "text": "\"All of these years later, we gather on another Tuesday morning in September to reaffirm the sacred vow we made a quarter of a century ago: WE WILL NEVER FORGET. Today we also remember another hero of 9/11... Welles Crowther.\" - President Donald J. Trump 🇺🇸",
+      "time": "2026-09-08T21:31:41.000Z",
+      "link": "https://x.com/WhiteHouse/status/2097437745261985984",
+      "rt": true
+    },
+    {
+      "id": "2097916357979615503",
+      "handle": "elonmusk",
+      "name": "",
+      "text": "The logic is symmetric",
+      "time": "2026-09-10T05:13:31.000Z",
+      "link": "https://x.com/elonmusk/status/2097916357979615503",
+      "rt": false
+    },
+    {
+      "id": "2089360376710283694",
+      "handle": "biggerztrends",
+      "name": "",
+      "text": "BTC at $60K or $70K in 2026? 👀\n\nPredict the future. \n\nCrypto, sports, news, politics. Make your call, back your prediction, and get rewarded.\n\nPredict now on BiggerZ",
+      "time": "",
+      "link": "https://x.com/biggerztrends/status/2089360376710283694/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097976755101327740",
+      "handle": "techreview",
+      "name": "",
+      "text": "A pastor and his wife created a cryptocurrency and hawked it in Christian communities. When it came crashing down, investors lost millions―and they were accused of fraud.",
+      "time": "2026-09-10T09:13:31.000Z",
+      "link": "https://x.com/techreview/status/2097976755101327740",
+      "rt": false
+    },
+    {
+      "id": "2098041336666452121",
+      "handle": "NewsfromScience",
+      "name": "",
+      "text": "A new project called \nhttps://\nPosters.science is proposing that online perusal could help raise the visibility and utility of the lowly poster—and be accessible to any researcher, even those who couldn’t attend a conference. \n@ScienceCareers\n \nhttps://\nscim.ag/4A38zPI",
+      "time": "2026-09-10T13:30:09.000Z",
+      "link": "https://x.com/NewsfromScience/status/2098041336666452121",
+      "rt": false
+    },
+    {
+      "id": "2097930608790167907",
+      "handle": "tianyi",
+      "name": "Tianyi Cui reposted",
+      "text": "🚀 Introducing DeepSeek-V4.1-Flash: smarter, faster, more efficient.\n\n🔹 Introducing the smallest model in our new architecture family, with native visual understanding.\n🔹 Designed for greater capability, faster inference, higher throughput, and scaling to larger models.\n\n1/6",
+      "time": "2026-09-10T06:10:09.000Z",
+      "link": "https://x.com/deepseek_ai/status/2097930608790167907",
+      "rt": true
+    },
+    {
+      "id": "2097775664099389451",
+      "handle": "GuangyuRobert",
+      "name": "",
+      "text": "i need a main agent that gets frustrated at how slow the subagents are\n\ni'm tired of the 7 hours goal mode super run with 20 subagents that diligently check & recheck",
+      "time": "2026-09-09T19:54:27.000Z",
+      "link": "https://x.com/GuangyuRobert/status/2097775664099389451",
+      "rt": false
+    },
+    {
+      "id": "2097476196791709843",
+      "handle": "skdh",
+      "name": "Sabine Hossenfelder reposted",
+      "text": "I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives. More thoughts below.",
+      "time": "2026-09-09T00:04:29.000Z",
+      "link": "https://x.com/hilbertspaess/status/2097476196791709843",
+      "rt": true
+    },
+    {
+      "id": "2096883954762776601",
+      "handle": "DigitShield_HQ",
+      "name": "",
+      "text": "每次发送 USDT 都要支付 TRX 手续费？\n试试 Digital Shield Wallet。\n🎁 每天获得 3 次免费 TRON 网络转账\n发送 TRX &amp; USDT 时减少手续费担忧\n安全管理您的加密货币",
+      "time": "",
+      "link": "https://x.com/DigitShield_HQ/status/2096883954762776601/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097732652920934839",
+      "handle": "dwarkesh_sp",
+      "name": "Dwarkesh Patel reposted",
+      "text": "New post: Data bottlenecks won’t block an intelligence explosion\n\nOne of the most important questions facing the world is whether AI will undergo a fast intelligence explosion and quickly automate most real-world work.\n\nA key objection people raise is *data bottlenecks*. Data is",
+      "time": "2026-09-09T17:03:33.000Z",
+      "link": "https://x.com/TomDavidsonX/status/2097732652920934839",
+      "rt": true
+    },
+    {
+      "id": "2097401468424986797",
+      "handle": "drfeifei",
+      "name": "Fei-Fei Li reposted",
+      "text": "Real time streaming of next view prediction model that has accurate camera positioning and is 3D consistent. Unbelievable.",
+      "time": "2026-09-08T19:07:32.000Z",
+      "link": "https://x.com/martin_casado/status/2097401468424986797",
+      "rt": true
+    },
+    {
+      "id": "2098102277512806622",
+      "handle": "LimitingThe",
+      "name": "The Limiting Factor reposted",
+      "text": "I had the pleasure to speak with \n@arushiSF\n, Tesla's former energy policy lead, and the architect of a new rule which will allow for better utilization of the grid and faster time to power for data center (and other!) customers in Texas.\n\nThis was one of my favorite conversations",
+      "time": "2026-09-10T17:32:18.000Z",
+      "link": "https://x.com/nerdalert/status/2098102277512806622",
+      "rt": true
+    },
+    {
+      "id": "2098100185633268012",
+      "handle": "joshearle",
+      "name": "",
+      "text": "don't bother trying to sell to EU companies",
+      "time": "2026-09-10T17:23:59.000Z",
+      "link": "https://x.com/joshearle/status/2098100185633268012",
+      "rt": false
+    },
+    {
+      "id": "2098142541845877221",
+      "handle": "hxiao",
+      "name": "",
+      "text": "they even set u a deadline;",
+      "time": "2026-09-10T20:12:18.000Z",
+      "link": "https://x.com/hxiao/status/2098142541845877221",
+      "rt": false
+    },
+    {
+      "id": "2097417305630335232",
+      "handle": "drfeifei",
+      "name": "Fei-Fei Li reposted",
+      "text": "atlas lets you walk around any zillow listing in realtime",
+      "time": "2026-09-08T20:10:28.000Z",
+      "link": "https://x.com/BenMildenhall/status/2097417305630335232",
+      "rt": true
+    },
+    {
+      "id": "2097523739965772283",
+      "handle": "xiaopenghexpeng",
+      "name": "",
+      "text": "Over the past year, many people have asked me:\"With XPENG’s robots getting so much attention, why don’t you show them more often?\"\n\nIt’s simple: I don’t agree.\n\nI believe our robots need to be better, not louder. We shouldn’t be in a rush. We should spend our time on technology,",
+      "time": "",
+      "link": "https://x.com/xiaopenghexpeng/status/2097523739965772283/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097753246307655736",
+      "handle": "DavidCarbutt_",
+      "name": "",
+      "text": "Excellent video for anyone interested in Lemonade stock.",
+      "time": "2026-09-09T18:25:22.000Z",
+      "link": "https://x.com/DavidCarbutt_/status/2097753246307655736",
+      "rt": false
+    },
+    {
+      "id": "2097769475416199211",
+      "handle": "LimitingThe",
+      "name": "",
+      "text": "Hey thanks man!",
+      "time": "2026-09-09T19:29:52.000Z",
+      "link": "https://x.com/LimitingThe/status/2097769475416199211",
+      "rt": false
+    },
+    {
+      "id": "2069333002199711745",
+      "handle": "lanmeijs",
+      "name": "",
+      "text": "关键时刻怎能卡顿？！\n--- 做懂你的VPN......",
+      "time": "",
+      "link": "https://x.com/lanmeijs/status/2069333002199711745/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097652469832814851",
+      "handle": "aigclink",
+      "name": "",
+      "text": "谷歌今天发布的：AlphaGenome Atlas，把人类基因组每一个可能的“单字母改动”的影响，全部预测完了\n\n并且做成了一张提前算好的全基因组地图，这对罕见病、复杂疾病以及药物靶点发现的研究比较有价值",
+      "time": "2026-09-09T11:44:55.000Z",
+      "link": "https://x.com/aigclink/status/2097652469832814851",
+      "rt": false
+    },
+    {
+      "id": "2097901978320023566",
+      "handle": "vkhosla",
+      "name": "",
+      "text": "I’m going to get a cardiac test before the next \n@Seahawks\n game. The team and 12s won it tonight. Hard to imagine a better roller coaster",
+      "time": "2026-09-10T04:16:23.000Z",
+      "link": "https://x.com/vkhosla/status/2097901978320023566",
+      "rt": false
+    },
+    {
+      "id": "2098045258592575731",
+      "handle": "peng_hellen",
+      "name": "",
+      "text": "“到场”了就会被视为默认《欧盟太空法案》，这个法案简单说就是轨道上那点资源谁说了算的问题。太空既政治，欧洲是重要的市场，但也没美国重要，大公司不想惹事，小公司惹不起，干脆就都不来了。\n\n出了大气层的资源都是靠实力先到先得，有实力就有威慑，有威慑就能最好的维护和平。",
+      "time": "2026-09-10T13:45:44.000Z",
+      "link": "https://x.com/peng_hellen/status/2098045258592575731",
+      "rt": false
+    },
+    {
+      "id": "2095515381498581061",
+      "handle": "Auki",
+      "name": "",
+      "text": "Imagine if you unboxed a new robot and all it took to onboard it to your space was showing it two QR codes.\n\nAuki deploys robots. Map your space with a phone and onboard the robot in 2 minutes with no forward-deployed engineer.",
+      "time": "",
+      "link": "https://x.com/Auki/status/2095515381498581061/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097696043492143157",
+      "handle": "sama",
+      "name": "",
+      "text": "ocarina of time remake is the best news in a long time.\n\ni will be unavailable november 5 and 6; need to find a case of mountain dew.",
+      "time": "2026-09-09T14:38:04.000Z",
+      "link": "https://x.com/sama/status/2097696043492143157",
+      "rt": false
+    },
+    {
+      "id": "2098134826209665441",
+      "handle": "Svwang1",
+      "name": "",
+      "text": "lol",
+      "time": "2026-09-10T19:41:38.000Z",
+      "link": "https://x.com/Svwang1/status/2098134826209665441",
+      "rt": false
+    },
+    {
+      "id": "2077506256906994157",
+      "handle": "USDai_Official",
+      "name": "",
+      "text": "Financial infrastructure for the AI buildout, built onchain.",
+      "time": "",
+      "link": "https://x.com/USDai_Official/status/2077506256906994157/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097485085188796468",
+      "handle": "drfeifei",
+      "name": "Fei-Fei Li reposted",
+      "text": "For those who remember \n@theworldlabs\n original RTFM demo: Atlas allows us to break out of these small spaces.    \n\nHere I took the kids playroom and using Atlas-turbo prompted a new outside area into existence.",
+      "time": "2026-09-09T00:39:48.000Z",
+      "link": "https://x.com/wendlerch/status/2097485085188796468",
+      "rt": true
+    },
+    {
+      "id": "2097619626557599892",
+      "handle": "TokensIntel",
+      "name": "",
+      "text": "Building a community-driven investigation platform for crypto. 🔎\n\nRoadmap is live.\n\nCommunity votes decide what gets investigated.\nReports follow the data.\nAlerts and multi-chain tracking are coming next.\n\nDon’t follow the hype. Follow the evidence.",
+      "time": "",
+      "link": "https://x.com/TokensIntel/status/2097619626557599892/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097726400069296327",
+      "handle": "millerandhill",
+      "name": "",
+      "text": "Woven trousers with an elasticated drawcord waist. Shop now at Miller & Hill.",
+      "time": "",
+      "link": "https://x.com/millerandhill/status/2097726400069296327/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097449587950678230",
+      "handle": "origin_trail",
+      "name": "",
+      "text": "\"There has been nothing we could actually do to combat it. Until now.\"\n\nThat's \n@CredibleCrypto\n on the accounts impersonating him. 190+ taken down in one week, each anchored to the DKG.\n\nJoin CrediBULL at DKGcon 2026!\n\n11 Sept / 15:00 CEST / Register ↓",
+      "time": "",
+      "link": "https://x.com/origin_trail/status/2097449587950678230/analytics",
+      "rt": false
+    },
+    {
+      "id": "2098074595978866957",
+      "handle": "jefflijun",
+      "name": "",
+      "text": "为什么marketing measurement 公司主导 MMM 市场\nmarketing measurement 公司之所以能主导 MMM（营销组合建模） 市场，核心原因是 MMM 本质上是一个“测量 + 建模 + 优化决策”问题，而不是单纯的媒介投放或数据报表问题。\n\n主要原因\n- MMM 高度依赖统计和计量能力\nMMM",
+      "time": "2026-09-10T15:42:18.000Z",
+      "link": "https://x.com/jefflijun/status/2098074595978866957",
+      "rt": false
+    },
+    {
+      "id": "2098076070402761184",
+      "handle": "DevinLewtan",
+      "name": "",
+      "text": "it's not everyday that you get to spend the day touching grass, surrounded by cows in rural connecticut\n\n(and get to work with your friends \n@afterimage\n!)",
+      "time": "2026-09-10T15:48:10.000Z",
+      "link": "https://x.com/DevinLewtan/status/2098076070402761184",
+      "rt": false
+    },
+    {
+      "id": "2098082466213044301",
+      "handle": "dwarkesh_sp",
+      "name": "",
+      "text": "that cow is locked in",
+      "time": "2026-09-10T16:13:35.000Z",
+      "link": "https://x.com/dwarkesh_sp/status/2098082466213044301",
+      "rt": false
+    },
+    {
+      "id": "2098063954673033626",
+      "handle": "skdh",
+      "name": "",
+      "text": "Neuroscience’s Case Against Free Will Is Falling Apart",
+      "time": "2026-09-10T15:00:01.000Z",
+      "link": "https://x.com/skdh/status/2098063954673033626",
+      "rt": false
+    },
+    {
+      "id": "2097501017185112156",
+      "handle": "WorldAndScience",
+      "name": "",
+      "text": "Fascinating: A study by NASA concluded that an afternoon nap taken between 1 PM and 3 PM improves decision-making skills by 50% and boosts productivity by 35%.",
+      "time": "2026-09-09T01:43:06.000Z",
+      "link": "https://x.com/WorldAndScience/status/2097501017185112156",
+      "rt": false
+    },
+    {
+      "id": "2093542047001219340",
+      "handle": "hamphreyemlna",
+      "name": "",
+      "text": "出海一站式推广服务，支持各行各业。X/谷歌/脸书/TK等广告代投；谷歌SEO优化/本地信息流广告/新闻发稿等数十种推广服务。",
+      "time": "",
+      "link": "https://x.com/hamphreyemlna/status/2093542047001219340/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097991993913757880",
+      "handle": "EliBenSasson",
+      "name": "",
+      "text": "For those who put money where mouth",
+      "time": "2026-09-10T10:14:04.000Z",
+      "link": "https://x.com/EliBenSasson/status/2097991993913757880",
+      "rt": false
+    },
+    {
+      "id": "2049674180421951583",
+      "handle": "afterprime_com",
+      "name": "",
+      "text": "We’ve cleared the technical debt to rebuild the foundation of retail brokerage. \n\nExperience institutional-grade flow and a cost structure optimized for the trader.",
+      "time": "",
+      "link": "https://x.com/afterprime_com/status/2049674180421951583/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097800110000496873",
+      "handle": "thesamparr",
+      "name": "",
+      "text": "Names, names, names:\n\n\"Dunn, North Carolina, is a small town about 40 miles south of Raleigh. It has 14,000 residents and its workforce is primarily blue-collar. The local diner is packed in the morning with people eating big breakfasts and drinking coffee. Waitresses call you",
+      "time": "2026-09-09T21:31:36.000Z",
+      "link": "https://x.com/thesamparr/status/2097800110000496873",
+      "rt": false
+    },
+    {
+      "id": "2097473335080710514",
+      "handle": "universal_sci",
+      "name": "",
+      "text": "In your opinion, what’s the most amazing phenomenon in nature?",
+      "time": "2026-09-08T23:53:06.000Z",
+      "link": "https://x.com/universal_sci/status/2097473335080710514",
+      "rt": false
+    },
+    {
+      "id": "2086065770916970542",
+      "handle": "Herror_Studio",
+      "name": "",
+      "text": "11 aug, 2026 release of [HERROR] Gas Station Case on Steam!\nBrand new horror game:",
+      "time": "",
+      "link": "https://x.com/Herror_Studio/status/2086065770916970542/analytics",
+      "rt": false
+    },
+    {
+      "id": "2097662372156465193",
+      "handle": "techreview",
+      "name": "",
+      "text": "Plus: The US has accused six Chinese AI firms of “industrial-scale” theft.",
+      "time": "2026-09-09T12:24:16.000Z",
+      "link": "https://x.com/techreview/status/2097662372156465193",
+      "rt": false
+    },
+    {
+      "id": "2058801157934346724",
+      "handle": "rwaweek",
+      "name": "",
+      "text": "RWA Week Macro Update: May 25-29 👀",
+      "time": "",
+      "link": "https://x.com/rwaweek/status/2058801157934346724/photo/1",
+      "rt": false
+    }
+  ]
+}

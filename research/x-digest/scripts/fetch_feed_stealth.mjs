@@ -4,7 +4,7 @@
 // system proxy (Clash @ 127.0.0.1:7890) is up.  Same output schema as fetch_feed.mjs.
 //
 // Usage: node scripts/fetch_feed_stealth.mjs [--scrolls 20] [--wait 2200] [--out <file>] [--merge]
-// Default output: $X_DIGEST_DATA_DIR/feed.json  (~/agent-data/x-digest/data/feed.json)
+// Default output: $X_DIGEST_DATA_DIR/feed.json  (~/email-assistant/x-digest/data/feed.json)
 import { chromium } from "playwright";
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
@@ -18,16 +18,16 @@ function getArg(name, dflt) {
 }
 const SCROLLS = parseInt(getArg("--scrolls", "20"), 10);
 const WAIT = parseInt(getArg("--wait", "2200"), 10);
-// Runtime data lives OUTSIDE the skill dir (~/agent-data/x-digest), so it stays
+// Runtime data lives OUTSIDE the skill dir (~/email-assistant/x-digest), so it stays
 // out of the Nutstore sync folder and out of git. Override: X_DIGEST_DATA_DIR.
 const DATA_DIR =
   process.env.X_DIGEST_DATA_DIR ||
-  join(homedir(), "agent-data", "x-digest", "data");
+  join(homedir(), "email-assistant", "x-digest", "data");
 const OUT = resolve(getArg("--out", join(DATA_DIR, "feed.json")));
 const PROXY = getArg("--proxy", "http://127.0.0.1:7890");
 const REAL_UA =
   "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/151.0.0.0 Safari/537.36";
-// Profile path comes from pw-common.mjs (~/.agents/browser-profiles/x-digest),
+// Profile path comes from pw-common.mjs (~/email-assistant/browser-profiles/x-digest),
 // deliberately outside this skill dir so Nutstore never syncs a live profile.
 const log = (m) => process.stderr.write(`[stealth] ${m}\n`);
 

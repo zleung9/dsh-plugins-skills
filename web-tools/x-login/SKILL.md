@@ -15,7 +15,7 @@ description: Log in to X.com (Twitter) with Playwright Chromium using a dedicate
   AutomationControlled` + 真实 locale/viewport + 持久 profile 绕过。
 - **不依赖用户的 Chrome / CDP 端口** —— 用 Playwright 自带 Chromium,
   **从不加载用户扩展**(避免 X 的 "privacy related extensions" 启动错误)。
-- **登录 cookie 持久化** 在 `~/.agents/browser-profiles/x-login`
+- **登录 cookie 持久化** 在 `~/email-assistant/browser-profiles/x-login`
   (刻意放在技能目录**之外**,避免 Nutstore 同步活动的 Chrome profile;
   可用 `X_PROFILE_DIR` 环境变量覆盖),登录一次,后续免登录
   (直到 X 让会话过期)。
@@ -106,7 +106,7 @@ X_USER='你的用户名或邮箱' X_PASS='你的密码' node scripts/x-login-aut
 
 ```bash
 node scripts/x-logout.mjs --cookies   # 删除 auth_token 等登录 cookie(保留 profile)
-node scripts/x-logout.mjs --purge     # 删除整个 profile(~/.agents/browser-profiles/x-login,最强重置)
+node scripts/x-logout.mjs --purge     # 删除整个 profile(~/email-assistant/browser-profiles/x-login,最强重置)
 ```
 
 ## 完整工作流示例
@@ -141,7 +141,7 @@ node scripts/x-status.mjs
 
 ## 注意事项
 
-- `~/.agents/browser-profiles/x-login` 同一时间**只能一个进程持有**(SingletonLock)——
+- `~/email-assistant/browser-profiles/x-login` 同一时间**只能一个进程持有**(SingletonLock)——
   脚本需顺序运行。
 - 删除该 profile 只会强制重新登录,不丢失其他东西(它不在技能目录里,
   也不进 Nutstore 同步)。

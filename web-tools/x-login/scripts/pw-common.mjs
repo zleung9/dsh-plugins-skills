@@ -1,7 +1,7 @@
 // pw-common.mjs — shared Playwright helpers for the x-login skill.
 //
 // Uses a DEDICATED persistent Chromium profile at
-// ~/.agents/browser-profiles/x-login (OUTSIDE this skill dir, so it stays
+// ~/email-assistant/browser-profiles/x-login (OUTSIDE this skill dir, so it stays
 // out of the Nutstore sync folder and is shared across agents). So:
 //   - login cookies persist to disk across runs (re-login only on expiry)
 //   - NO user extensions are ever loaded (avoids X.com's
@@ -23,7 +23,7 @@ import { homedir } from "node:os";
 // Override the location with X_PROFILE_DIR if you need a different one.
 export const X_PROFILE =
   process.env.X_PROFILE_DIR ||
-  join(homedir(), ".agents", "browser-profiles", "x-login");
+  join(homedir(), "email-assistant", "browser-profiles", "x-login");
 export const X_HOME = "https://x.com";
 export const X_LOGIN = "https://x.com/login";
 

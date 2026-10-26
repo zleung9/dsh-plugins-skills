@@ -15,6 +15,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 
 # Local HTTP proxy (Clash)
@@ -41,7 +42,7 @@ def _clean_html(text):
 
 def search_wikipedia(query, limit=5):
     try:
-        q = query.replace(" ", "+")
+        q = urllib.parse.quote(query)
         url = f"https://en.wikipedia.org/w/api.php?action=query&list=search&srsearch={q}&format=json&srlimit={limit}"
         data = _fetch_json(url)
         results = []
@@ -60,7 +61,7 @@ def search_wikipedia(query, limit=5):
 
 def search_duckduckgo(query, limit=5):
     try:
-        q = query.replace(" ", "+")
+        q = urllib.parse.quote(query)
         url = f"https://api.duckduckgo.com/?q={q}&format=json&no_html=1"
         data = _fetch_json(url)
         results = []
@@ -89,7 +90,7 @@ def search_duckduckgo(query, limit=5):
 
 def search_crossref(query, limit=5):
     try:
-        q = query.replace(" ", "+")
+        q = urllib.parse.quote(query)
         url = f"https://api.crossref.org/works?query={q}&rows={limit}&sort=relevance"
         data = _fetch_json(url, timeout=15, user_agent=MAILTO_USER_AGENT)
         results = []
@@ -119,7 +120,7 @@ def search_crossref(query, limit=5):
 def search_semantic_scholar(query, limit=5, retries=2):
     for attempt in range(retries + 1):
         try:
-            q = query.replace(" ", "+")
+            q = urllib.parse.quote(query)
             url = (
                 f"https://api.semanticscholar.org/graph/v1/paper/search?"
                 f"query={q}&limit={limit}&fields=title,url,year,citationCount,abstract"

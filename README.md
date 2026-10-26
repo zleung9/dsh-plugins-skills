@@ -13,10 +13,13 @@ neutral root** at `~/.agents/`, shared by pi, Claude Code and Codex alike:
 ```
 ~/.agents/
   node_modules/          # one copy of playwright / puppeteer-core / cheerio / jsdom / …
-  browser-profiles/      # persistent Chromium profiles (keep X login state)
   backup/                # pre-refactor backups of profiles and removed junk
   skills/                # symlinks into this repo (30 entries)
+  browser-profiles       # -> ~/email-assistant/browser-profiles (compat symlink)
 ```
+
+Persistent Chromium profiles live in the `~/email-assistant` workspace (see
+below); `~/.agents/browser-profiles` is kept as a symlink for compatibility.
 
 **Calling convention — two mechanisms, because Node resolves them differently:**
 
@@ -49,7 +52,7 @@ in `pw-common.mjs`:
 ```js
 export const X_PROFILE =
   process.env.X_PROFILE_DIR ||
-  join(homedir(), ".agents", "browser-profiles", "x-digest");
+  join(homedir(), "email-assistant", "browser-profiles", "x-digest");
 ```
 
 They are deliberately kept out of this repo: they are live Chrome user-data
@@ -57,28 +60,41 @@ dirs that would otherwise be re-uploaded by Nutstore on every run. Each
 profile's `Default/Cache`, `Default/Code Cache` and `Default/Service Worker`
 can be deleted at any time to reclaim space **without** losing the login.
 
-## Runtime records live in `~/agent-data`
+## Runtime records live in `~/email-assistant` (also a DSH workspace)
 
 Daily-growing output (captured feeds, generated digests, dedup stores, email
-archive, long-term memory) is **not** kept here either. It lives in a separate
-data workspace, `~/agent-data`, documented in its own README:
+archive, long-term memory, Chromium profiles) is **not** kept here either. It
+lives in a separate data workspace, `~/email-assistant`, documented in its own
+README:
 
 ```
-~/agent-data/
-  x-digest/data/            feeds, digests, seen.json
-  nature-digest/data/       candidates, digests, seen.json
-  email-assistant/archive/  one dir per processed email
-  email-assistant/memory/   interests.jsonl, topics.json, dream.py
+~/email-assistant/
+  x-digest/data/               feeds, digests, seen.json
+  nature-digest/data/          candidates, digests, seen.json
+  archive/                     one dir per processed email
+  memory/                      interests.jsonl, topics.json, dream.py
+  browser-profiles/x-digest/   Playwright profile (keeps X login)
+  browser-profiles/x-login/    Playwright profile for the login skill
 ```
+
+`~/email-assistant` doubles as a **DSH workspace root**: DSH's native
+scheduled tasks (「自动化任务」, `@deepseek-ai/dsh-experimental-schedule-bundle`)
+run *inside* a session and are confined by that session's sandbox, whose
+writable boundary is the session's workspace. Rooting the workspace at
+`~/email-assistant` therefore lets an automation session write all of the paths
+above. The old `~/agent-data/*` locations and `~/.agents/browser-profiles` are
+kept as symlinks pointing here.
 
 Each script resolves its data root from an env var with a default pointing
 there, so this repo holds **no runtime state at all**:
 
 | Skill | Env var | Default |
 |---|---|---|
-| x-digest | `X_DIGEST_DATA_DIR` | `~/agent-data/x-digest/data` |
-| nature-digest | `NATURE_DIGEST_DATA_DIR` | `~/agent-data/nature-digest/data` |
-| email-assistant | `MAIL_ARCHIVE_ROOT` / `EMAIL_ASSISTANT_MEMORY` | `~/agent-data/email-assistant/{archive,memory}` |
+| x-digest | `X_DIGEST_DATA_DIR` | `~/email-assistant/x-digest/data` |
+| nature-digest | `NATURE_DIGEST_DATA_DIR` | `~/email-assistant/nature-digest/data` |
+| email-assistant (archive) | `MAIL_ARCHIVE_ROOT` | `~/email-assistant/archive` |
+| email-assistant (memory) | `EMAIL_ASSISTANT_MEMORY` | `~/email-assistant/memory` |
+| x-digest / x-login (browser) | `X_PROFILE_DIR` | `~/email-assistant/browser-profiles/<skill>` |
 
 `data/`, `memory/` and `pi-mail-archive/` are listed in `.gitignore` as a guard
 against regression — a skill writing to a bare `data/…` path inside its own

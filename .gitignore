@@ -14,7 +14,7 @@ node_modules/
 
 # ---------------------------------------------------------------------------
 # Runtime records. These must NOT live in the repo: they are daily-growing
-# output that belongs in the data workspace ~/agent-data (see README.md).
+# output that belongs in the data workspace ~/email-assistant (see README.md).
 # The skills resolve their data dir from an env var (X_DIGEST_DATA_DIR,
 # NATURE_DIGEST_DATA_DIR, MAIL_ARCHIVE_ROOT, EMAIL_ASSISTANT_MEMORY), so these
 # paths should never reappear — the rules below are a guard against regression.

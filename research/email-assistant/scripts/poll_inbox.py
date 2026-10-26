@@ -22,7 +22,7 @@ Long-running tasks:
     check can tell a still-running long task from a crashed one.
 
 State:    ~/.local/cron/inbox/state.json   (keyed by Message-ID)
-Archive:  ~/agent-data/email-assistant/archive/YYYY-MM/<date>-<mid8>-<subject>/
+Archive:  ~/email-assistant/archive/YYYY-MM/<date>-<mid8>-<subject>/
           (runtime records live outside the skills repo and outside the
           Nutstore sync folder; override with MAIL_ARCHIVE_ROOT)
           each processed email gets its own directory containing
@@ -57,7 +57,7 @@ Sessions & threads:
 
 Owner directive lines (`pi:`):
   - Only mail from OWNER_ADDRESSES may carry lines like
-    `pi: model=Huawei/glm-52 level=high skill=nature-digest`.
+    `pi: model=Huawei/glm-5.3 level=high skill=nature-digest`.
   - model= must exist in ~/.pi/agent/models.json (whitelist); level= must be
     a valid --thinking level. Applied directives become CLI flags; rejected
     ones are reported to the agent so it can state the actual model used.
@@ -87,7 +87,7 @@ STATE_FILE = os.path.join(BASE, "state.json")
 ARCHIVE_ROOT = os.path.expanduser(
     # Runtime records live outside the skills repo and outside the Nutstore
     # sync folder (they were 2.6G and growing). Override with MAIL_ARCHIVE_ROOT.
-    os.environ.get("MAIL_ARCHIVE_ROOT", "~/agent-data/email-assistant/archive")
+    os.environ.get("MAIL_ARCHIVE_ROOT", "~/email-assistant/archive")
 )
 DSH_BIN = os.environ.get(
     "DSH_BIN",
@@ -96,7 +96,7 @@ DSH_HOME = os.environ.get("DSH_HOME", os.path.expanduser("~/.dsh"))
 # The dsh profile this poller boots. It is a dedicated clone of `headless`
 # whose own settings document (~/.dsh/email-assistant-settings.yaml) pins
 # email-assistant to deepseek-v4.1-flash. The shared `headless` profile keeps
-# reading ~/.dsh/settings.yaml, so x-digest / nature-digest stay on glm-52.
+# reading ~/.dsh/settings.yaml, so x-digest / nature-digest stay on glm-5.3.
 DSH_PROFILE = os.environ.get("DSH_PROFILE", "email")
 EMAIL_ASSISTANT_PROMPT = os.path.expanduser(
     "~/.local/cron/prompts/email-assistant.md")

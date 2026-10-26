@@ -8,7 +8,7 @@
 那一封回复的页面格式与风格，要求**以后所有 email-assistant 回复统一采用
 该样式**。
 
-- 参考归档：`~/agent-data/email-assistant/archive/2026-09/2026-09-14-1501-5680EBD7-调研X帖子-Dario-on-slowing-down-the-AI-resea/reply.html`
+- 参考归档：`~/email-assistant/archive/2026-09/2026-09-14-1501-5680EBD7-调研X帖子-Dario-on-slowing-down-the-AI-resea/reply.html`
 - 可复用模板：`reply-style-template.html`（与本文件同目录）
   - 内含该样式完整的 `<style>` 块 + 结构骨架 + 每一块用途的 HTML 注释。
   - **Stage 2 生成 reply.html 时，复制其 `<style>` 整段原样使用**，
@@ -32,7 +32,7 @@
 ## 运行模型：email-assistant 专属 profile（2026-09-25 确定）
 
 **偏好**：owner **不要全家桶**。只把 email-assistant 切到 DeepSeek-V4.1，
-两个 digest（x-digest / nature-digest）继续用 glm-52。
+两个 digest（x-digest / nature-digest）继续用 glm-5.3。
 
 **落地方式**（已实现，勿随意改动）：
 
@@ -46,7 +46,7 @@
   所以单纯给 `headless` 打 patch 赢不了它；必须换 settings 文档。
 - poller：`poll_inbox.py` 的 `DSH_PROFILE`（默认 `email`）决定用哪个 profile；
   `run_dsh()` 用 `[DSH_BIN, "--profile", DSH_PROFILE, ...]`。
-- `~/.dsh/settings.yaml` 保持 `glm-52`（digests 用）。
+- `~/.dsh/settings.yaml` 保持 `glm-5.3`（digests 用）。
 - 回滚：把 `poll_inbox.py` 的 `DSH_PROFILE` 改回 `headless` 即可；
   profile 目录留着无害。
 

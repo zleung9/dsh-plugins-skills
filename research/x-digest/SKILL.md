@@ -10,13 +10,13 @@ any questions — make reasonable decisions and proceed to completion. Output a
 concise one-line summary at the very end.
 
 Paths: **skill code** is relative to the skill directory (`scripts/…`);
-**runtime data** lives in `$DATA` (= `~/agent-data/x-digest/data`), deliberately
+**runtime data** lives in `$DATA` (= `~/email-assistant/x-digest/data`), deliberately
 outside the skill dir so it is never uploaded by Nutstore. **First, always run:**
 
 ```bash
 cd /Users/zliang/.pi/agent/skills/x-digest
 DATE=$(date +%F)
-DATA=~/agent-data/x-digest/data     # override with X_DIGEST_DATA_DIR
+DATA=~/email-assistant/x-digest/data     # override with X_DIGEST_DATA_DIR
 mkdir -p "$DATA/digests"
 ```
 
@@ -27,7 +27,7 @@ that would write runtime output back into the synced folder.)
 ## Browser: Playwright Chromium (NOT the user's Chrome)
 
 The pipeline uses Playwright's own Chromium with a **dedicated persistent
-profile** at `~/.agents/browser-profiles/x-digest` (deliberately OUTSIDE the
+profile** at `~/email-assistant/browser-profiles/x-digest` (deliberately OUTSIDE the
 skill dir, so the live Chrome profile is never uploaded by Nutstore; override
 with the `X_PROFILE_DIR` env var):
 
@@ -162,7 +162,7 @@ Done: <N> relevant items, <M> tweets in 24h (<K> captured), <K2> in store. Diges
 
 | Script | Purpose |
 |---|---|
-| `scripts/pw-common.mjs` | shared Playwright helpers (persistent profile `~/.agents/browser-profiles/x-digest`, login check) |
+| `scripts/pw-common.mjs` | shared Playwright helpers (persistent profile `~/email-assistant/browser-profiles/x-digest`, login check) |
 | `scripts/x-status.mjs` | print `{loggedIn, hasAuthToken, cookieCount}` JSON |
 | `scripts/x-login.mjs` | open visible login window, poll until auth_token appears |
 | `scripts/fetch_feed.mjs` | scroll-capture the Following feed → JSON |
@@ -170,7 +170,7 @@ Done: <N> relevant items, <M> tweets in 24h (<K> captured), <K2> in store. Diges
 
 ## Notes
 
-- Only **one** process may hold `~/.agents/browser-profiles/x-digest` at a time
+- Only **one** process may hold `~/email-assistant/browser-profiles/x-digest` at a time
   (SingletonLock) — run the scripts sequentially (the pipeline already does).
 - The profile lives outside the skill dir and outside Nutstore; it may grow
   with browser caches. Deleting its `Default/Cache`, `Default/Code Cache` and

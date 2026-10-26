@@ -1,7 +1,7 @@
 // pw-common.mjs — shared Playwright helpers for x-digest.
 //
 // Uses a dedicated persistent Chromium profile at
-// ~/.agents/browser-profiles/x-digest (OUTSIDE this skill dir, so it stays
+// ~/email-assistant/browser-profiles/x-digest (OUTSIDE this skill dir, so it stays
 // out of the Nutstore sync folder and is shared across agents). So:
 //   - login cookies persist to disk across runs (no re-login needed)
 //   - NO user extensions are ever loaded (the X.com "privacy extension"
@@ -18,7 +18,7 @@ import { homedir } from "node:os";
 // Override the location with X_PROFILE_DIR if you need a different one.
 export const X_PROFILE =
   process.env.X_PROFILE_DIR ||
-  join(homedir(), ".agents", "browser-profiles", "x-digest");
+  join(homedir(), "email-assistant", "browser-profiles", "x-digest");
 
 /**
  * Launch the persistent X Chromium context.

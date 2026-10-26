@@ -11,7 +11,7 @@ concise one-line summary at the very end.
 
 Paths: **skill code/config** is relative to the skill directory (`scripts/…`,
 `config/feeds.json`); **runtime data** lives in `$DATA`
-(= `~/agent-data/nature-digest/data`), deliberately outside the skill dir so it
+(= `~/email-assistant/nature-digest/data`), deliberately outside the skill dir so it
 is never uploaded by Nutstore. **First, always run:**
 
 ```bash
@@ -25,7 +25,7 @@ Today's date:
 
 ```bash
 DATE=$(date +%F)   # e.g. 2026-08-26
-DATA=~/agent-data/nature-digest/data   # override with NATURE_DIGEST_DATA_DIR
+DATA=~/email-assistant/nature-digest/data   # override with NATURE_DIGEST_DATA_DIR
 mkdir -p "$DATA/digests"
 ```
 

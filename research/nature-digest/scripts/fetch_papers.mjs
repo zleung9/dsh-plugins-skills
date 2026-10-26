@@ -8,7 +8,7 @@
 // Usage:
 //   node fetch_papers.mjs
 //   node fetch_papers.mjs --max-new 60
-// Default data dir: ~/agent-data/nature-digest/data
+// Default data dir: ~/email-assistant/nature-digest/data
 import { readFileSync, writeFileSync, existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 import { dirname, join, resolve } from "node:path";
@@ -17,11 +17,11 @@ import { homedir } from "node:os";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SKILL_DIR = resolve(__dirname, "..");
 // Runtime data lives OUTSIDE the skill dir, in the dedicated data workspace
-// (~/agent-data/nature-digest), so it stays out of the Nutstore sync folder and
+// (~/email-assistant/nature-digest), so it stays out of the Nutstore sync folder and
 // out of git. Override the location with NATURE_DIGEST_DATA_DIR.
 const DATA_DIR =
   process.env.NATURE_DIGEST_DATA_DIR ||
-  join(homedir(), "agent-data", "nature-digest", "data");
+  join(homedir(), "email-assistant", "nature-digest", "data");
 
 function parseArgs(argv) {
   const o = {};

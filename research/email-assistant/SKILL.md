@@ -11,7 +11,7 @@ run. Do **not** ask the user questions; make reasonable decisions and finish.
 **Runtime model (2026-09-25).** The poller boots you with
 `dsh --profile email` — a dedicated profile pinned to **deepseek-v4.1-flash**.
 This is deliberately separate from the shared `headless` profile so that
-x-digest / nature-digest stay on glm-52. See
+x-digest / nature-digest stay on glm-5.3. See
 `~/.dsh/profiles/email/cordis.patch.yml` and
 `~/.dsh/email-assistant-settings.yaml`. Do not change the model yourself.
 
@@ -66,7 +66,7 @@ EOF
 memory — it is one page and costs almost nothing:
 
 ```
-~/agent-data/email-assistant/memory/INDEX.md
+~/email-assistant/memory/INDEX.md
 ```
 
 It lists your long-term interests with a **weight** (how hot the topic is),
@@ -78,19 +78,19 @@ mention count, and last-seen date. Two uses:
 - **Optional deeper recall.** To score history against this email's topic:
 
   ```bash
-  python3 ~/agent-data/email-assistant/memory/dream.py --recall "<主题关键词>"
+  python3 ~/email-assistant/memory/dream.py --recall "<主题关键词>"
   ```
 
   A `HIT` line (score >= 0.35) is worth connecting to.
 
 The memory exists because the owner asked for it (2026-09-25): a "dreaming"
 mechanism plus strengthen/weaken dynamics. Full design:
-`~/agent-data/email-assistant/memory/DREAM-DESIGN.md`.
+`~/email-assistant/memory/DREAM-DESIGN.md`.
 
 **Special requests:**
 
 - Owner says **「做个梦」/「整理记忆」** → after replying, run
-  `python3 ~/agent-data/email-assistant/memory/dream.py --force` and
+  `python3 ~/email-assistant/memory/dream.py --force` and
   report what was consolidated in the reply.
 - Owner asks **「我之前关注过什么」** → use `--recall`, don't run a full dream.
 
@@ -248,19 +248,19 @@ python3 /Users/zliang/.pi/agent/skills/email/scripts/send_email.py \
 **After** the reply has been sent, append **0–3** interest items to:
 
 ```
-~/agent-data/email-assistant/memory/interests.jsonl
+~/email-assistant/memory/interests.jsonl
 ```
 
 One JSON object per line, append-only. Only for **owner** mail, and only items
 the owner actually asked / chose / cared about. Skip pure pleasantries, third
 party content, and anything unrelated to the owner's interests.
 
-Schema (full detail in `~/agent-data/email-assistant/memory/DREAM-DESIGN.md` §3):
+Schema (full detail in `~/email-assistant/memory/DREAM-DESIGN.md` §3):
 
 ```json
 {"id":"2026-09-25-004","ts":"2026-09-25T07:10:00+08:00","kind":"research-request",
  "topic":"短主题名","summary":"一句话，owner 关注了什么","entities":["X","Y"],
- "archive":"~/agent-data/email-assistant/archive/2026-09/...","thread":"<thread>","subject":"<subject>",
+ "archive":"~/email-assistant/archive/2026-09/...","thread":"<thread>","subject":"<subject>",
  "status":"open","confidence":0.9}
 ```
 
@@ -269,7 +269,7 @@ Schema (full detail in `~/agent-data/email-assistant/memory/DREAM-DESIGN.md` §3
 the file. **Bound the effort — a few lines, never a re-summary of the email.**
 
 Do **not** update `topics.json` / `INDEX.md` here: those are owned by the
-nightly dream pass (`~/agent-data/email-assistant/memory/dream.py`), which consolidates, strengthens,
+nightly dream pass (`~/email-assistant/memory/dream.py`), which consolidates, strengthens,
 decays, and rewrites them.
 
 Append safely (the poller runs up to 4 workers; `flock` serializes):
@@ -277,7 +277,7 @@ Append safely (the poller runs up to 4 workers; `flock` serializes):
 ```bash
 python3 - <<'EOF'
 import fcntl, json, os
-p = os.path.expanduser("~/agent-data/email-assistant/memory/interests.jsonl")
+p = os.path.expanduser("~/email-assistant/memory/interests.jsonl")
 item = {...}   # the object above
 with open(p, "a", encoding="utf-8") as f:
     fcntl.flock(f, fcntl.LOCK_EX)
@@ -298,7 +298,7 @@ send an explanatory reply (the poller will retry, up to 3 times).
 ## Owner directive lines (`pi:`)
 
 Only the owner (zleung9@163.com / zleung9@outlook.com) can steer *how* this
-run executes via lines like `pi: model=Huawei/glm-52 level=high skill=x-digest`
+run executes via lines like `pi: model=Huawei/glm-5.3 level=high skill=x-digest`
 in the mail body. The poller validates them (model must exist in
 `~/.pi/agent/models.json`, level must be a valid thinking level) and turns the
 valid ones into CLI flags — you do **not** set the model yourself. If the

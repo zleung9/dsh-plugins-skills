@@ -6,7 +6,7 @@
 // run `node scripts/x-login.mjs` first.
 //
 // Usage: node scripts/fetch_feed.mjs [--scrolls 16] [--wait 2200] [--out <file>] [--merge]
-// Default output: $X_DIGEST_DATA_DIR/feed.json  (~/agent-data/x-digest/data/feed.json)
+// Default output: $X_DIGEST_DATA_DIR/feed.json  (~/email-assistant/x-digest/data/feed.json)
 import { mkdirSync, writeFileSync, readFileSync, existsSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { homedir } from "node:os";
@@ -20,11 +20,11 @@ function getArg(name, dflt) {
 const SCROLLS = parseInt(getArg("--scrolls", "16"), 10);
 const WAIT = parseInt(getArg("--wait", "2200"), 10);
 // Runtime data lives OUTSIDE the skill dir, in the dedicated data workspace
-// (~/agent-data/x-digest), so it stays out of the Nutstore sync folder and out
+// (~/email-assistant/x-digest), so it stays out of the Nutstore sync folder and out
 // of git. Override the location with X_DIGEST_DATA_DIR.
 const DATA_DIR =
   process.env.X_DIGEST_DATA_DIR ||
-  join(homedir(), "agent-data", "x-digest", "data");
+  join(homedir(), "email-assistant", "x-digest", "data");
 const OUT = resolve(getArg("--out", join(DATA_DIR, "feed.json")));
 const HEADED = !argv.includes("--headless");
 const log = (m) => process.stderr.write(`[feed] ${m}\n`);
