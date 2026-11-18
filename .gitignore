@@ -21,14 +21,14 @@ node_modules/
 # ---------------------------------------------------------------------------
 
 # x-digest daily captures + generated digests + dedup store
-research/x-digest/data/
+skills/research/x-digest/data/
 
 # nature-digest candidates + digests + dedup store
-research/nature-digest/data/
+skills/research/nature-digest/data/
 
 # email-assistant long-term memory (also holds dream.py, which lives with its
 # data by design)
-research/email-assistant/memory/
+skills/research/email-assistant/memory/
 
 # email archive (was ~/Nutstore Files/pi-mail-archive)
 **/pi-mail-archive/

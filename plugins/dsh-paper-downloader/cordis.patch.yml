@@ -1,0 +1,5 @@
+- insert:
+    - id: paper-downloader
+      name: '@local/dsh-paper-downloader'
+      config:
+        channel: chrome

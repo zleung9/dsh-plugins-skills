@@ -1,0 +1,12 @@
+{
+  "name": "@local/dsh-paper-downloader",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "通过独立持久浏览器阅读论文网页和下载全文，支持分章节读取及人工验证后继续。",
+  "exports": { ".": "./index.js", "./locale/*.json": "./locale/*.json", "./icon": "./icon.svg" },
+  "files": ["index.js", "engine.js", "reader.js", "article-extract.js", "cordis.patch.yml", "locale/*.json", "icon.svg", "README.md"],
+  "dsh": { "bundle": { "patch": "./cordis.patch.yml" } },
+  "scripts": { "test": "node --test", "check": "node --check index.js && node --check engine.js && node --check reader.js && node --check article-extract.js" },
+  "dependencies": { "playwright-core": "1.65.1" }
+}
