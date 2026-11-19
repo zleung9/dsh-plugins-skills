@@ -7,14 +7,14 @@ Invoked every minute by cron via run_job (see ~/.local/cron/run-0100.sh).
 Exits in ~1-2s when there is nothing new.
 
 Concurrency:
-  - Up to EMAIL_CONCURRENCY (default 2) mails are processed in parallel,
-    one `dsh --profile headless` per worker thread.
+  - Up to EMAIL_CONCURRENCY (default 4) mails are processed in parallel,
+    one `dsh --profile ${DSH_PROFILE}` (default `email`) per worker thread.
   - state.json is guarded by a lock (atomic read-modify-write + rename); the
     shared IMAP connection is used only for the initial fetch/search and a
     short serialized STORE per processed mail.
 
 Long-running tasks:
-  - Each `dsh --profile headless` run has a hard timeout (DSH_TIMEOUT, default
+  - Each `dsh --profile ${DSH_PROFILE}` run has a hard timeout (DSH_TIMEOUT, default
     2 h) as the only safety net. DSH headless is stateless per run (no session
     file), so there is no stall/loop/bloat watchdog. On timeout the process
     group is killed and the mail is requeued (pending) for retry.
@@ -22,7 +22,9 @@ Long-running tasks:
     check can tell a still-running long task from a crashed one.
 
 State:    ~/.local/cron/inbox/state.json   (keyed by Message-ID)
-Archive:  ~/Nutstore Files/pi-mail-archive/YYYY-MM/<date>-<mid8>-<subject>/
+Archive:  ~/email-assistant/archive/YYYY-MM/<date>-<mid8>-<subject>/
+          (runtime records live outside the skills repo and outside the
+          Nutstore sync folder; override with MAIL_ARCHIVE_ROOT)
           each processed email gets its own directory containing
           original.eml + attachments/ + meta.json (poller writes these);
           the agent adds reply.html + result.txt
@@ -55,7 +57,7 @@ Sessions & threads:
 
 Owner directive lines (`pi:`):
   - Only mail from OWNER_ADDRESSES may carry lines like
-    `pi: model=Huawei/glm-52 level=high skill=nature-digest`.
+    `pi: model=Huawei/glm-5.3 level=high skill=nature-digest`.
   - model= must exist in ~/.pi/agent/models.json (whitelist); level= must be
     a valid --thinking level. Applied directives become CLI flags; rejected
     ones are reported to the agent so it can state the actual model used.
@@ -83,18 +85,25 @@ ACCOUNT = os.environ.get("INBOX_ACCOUNT", "163")
 BASE = os.path.expanduser(os.environ.get("INBOX_STATE_DIR", "~/.local/cron/inbox"))
 STATE_FILE = os.path.join(BASE, "state.json")
 ARCHIVE_ROOT = os.path.expanduser(
-    os.environ.get("MAIL_ARCHIVE_ROOT", "~/Nutstore Files/pi-mail-archive")
+    # Runtime records live outside the skills repo and outside the Nutstore
+    # sync folder (they were 2.6G and growing). Override with MAIL_ARCHIVE_ROOT.
+    os.environ.get("MAIL_ARCHIVE_ROOT", "~/email-assistant/archive")
 )
 DSH_BIN = os.environ.get(
     "DSH_BIN",
     "/Users/zliang/.npm/_npx/1e7f6d9597241db0/node_modules/.bin/dsh")
 DSH_HOME = os.environ.get("DSH_HOME", os.path.expanduser("~/.dsh"))
+# The dsh profile this poller boots. It is a dedicated clone of `headless`
+# whose own settings document (~/.dsh/email-assistant-settings.yaml) pins
+# email-assistant to deepseek-v4.1-flash. The shared `headless` profile keeps
+# reading ~/.dsh/settings.yaml, so x-digest / nature-digest stay on glm-5.3.
+DSH_PROFILE = os.environ.get("DSH_PROFILE", "email")
 EMAIL_ASSISTANT_PROMPT = os.path.expanduser(
     "~/.local/cron/prompts/email-assistant.md")
 STALE_SECONDS = 60 * 60      # in_progress older than this is stale (crashed run)
 MAX_RETRIES = 3
 PREVIEW_CHARS = 12000
-CONCURRENCY = max(1, int(os.environ.get("EMAIL_CONCURRENCY", "2")))
+CONCURRENCY = max(1, int(os.environ.get("EMAIL_CONCURRENCY", "4")))
 # DSH headless runs with a generous hard timeout as a safety net (no
 # session-file-based stall detection — DSH headless is stateless per run).
 DSH_TIMEOUT = int(os.environ.get("DSH_TIMEOUT", 2 * 60 * 60))  # 2 hours
@@ -249,8 +258,9 @@ def parse_pi_instructions(body, sender):
             if k == "model":
                 notes.append(
                     f"pi-directive: model={v} (noted but NOT applied in DSH "
-                    f"mode — this run uses the default model glm-52. State "
-                    f"this clearly at the top of your reply.)")
+                    f"mode — this run uses the configured default model of "
+                    f"the `{DSH_PROFILE}` profile. State this clearly at the "
+                    f"top of your reply.)")
             elif k == "level":
                 notes.append(
                     f"pi-directive: level={v} (noted but NOT applied in DSH "
@@ -358,9 +368,10 @@ def dsh_run_alive(pid):
 
 
 def run_dsh(prompt, state, mid):
-    """Run `dsh --profile headless` with the email-assistant prompt template
-    prepended to the per-mail metadata. A hard timeout is the only safety net
-    (DSH headless is stateless per run — no session-file stall/loop detection).
+    """Run `dsh --profile <DSH_PROFILE>` with the email-assistant prompt
+    template prepended to the per-mail metadata. A hard timeout is the only
+    safety net (DSH headless is stateless per run — no session-file
+    stall/loop detection).
 
     Returns (ok, kill_reason_or_None).
     """
@@ -375,7 +386,7 @@ def run_dsh(prompt, state, mid):
     env = dict(os.environ)
     env["DSH_HOME"] = DSH_HOME
     p = subprocess.Popen(
-        [DSH_BIN, "--profile", "headless", full_prompt],
+        [DSH_BIN, "--profile", DSH_PROFILE, full_prompt],
         env=env, start_new_session=True)  # inherit stdout/stderr -> per-day cron log
     # record pid so the stale-recovery loop in the next cron tick can see the
     # run is still alive (DSH headless has no session file to stat)

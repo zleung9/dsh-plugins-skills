@@ -1,6 +1,8 @@
 // pw-common.mjs — shared Playwright helpers for the x-login skill.
 //
-// Uses a DEDICATED persistent Chromium profile (browser-profile/) so:
+// Uses a DEDICATED persistent Chromium profile at
+// ~/email-assistant/browser-profiles/x-login (OUTSIDE this skill dir, so it stays
+// out of the Nutstore sync folder and is shared across agents). So:
 //   - login cookies persist to disk across runs (re-login only on expiry)
 //   - NO user extensions are ever loaded (avoids X.com's
 //     "Something went wrong … privacy related extensions" bootstrap error)
@@ -13,11 +15,15 @@
 //
 // Only ONE process may hold the profile at a time (SingletonLock).
 import { chromium } from "playwright";
-import { dirname, join } from "node:path";
-import { fileURLToPath } from "node:url";
+import { join } from "node:path";
+import { homedir } from "node:os";
 
-const SKILL_DIR = dirname(dirname(fileURLToPath(import.meta.url)));
-export const X_PROFILE = join(SKILL_DIR, "browser-profile");
+// The profile is deliberately NOT inside the skill dir: it is a live Chrome
+// user-data dir that would otherwise be uploaded by Nutstore on every run.
+// Override the location with X_PROFILE_DIR if you need a different one.
+export const X_PROFILE =
+  process.env.X_PROFILE_DIR ||
+  join(homedir(), "email-assistant", "browser-profiles", "x-login");
 export const X_HOME = "https://x.com";
 export const X_LOGIN = "https://x.com/login";
 

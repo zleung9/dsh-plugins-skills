@@ -9,7 +9,10 @@ You are running an **automated, headless** daily digest. Do **not** ask the user
 any questions — make reasonable decisions and proceed to completion. Output a
 concise one-line summary at the very end.
 
-All paths below are relative to the skill directory. **First, always run:**
+Paths: **skill code/config** is relative to the skill directory (`scripts/…`,
+`config/feeds.json`); **runtime data** lives in `$DATA`
+(= `~/email-assistant/nature-digest/data`), deliberately outside the skill dir so it
+is never uploaded by Nutstore. **First, always run:**
 
 ```bash
 cd /Users/zliang/.pi/agent/skills/nature-digest
@@ -22,24 +25,29 @@ Today's date:
 
 ```bash
 DATE=$(date +%F)   # e.g. 2026-08-26
+DATA=~/email-assistant/nature-digest/data   # override with NATURE_DIGEST_DATA_DIR
+mkdir -p "$DATA/digests"
 ```
+
+Never use a bare `data/…` path — that would write runtime output back into the
+synced folder.
 
 ## Pipeline
 
 ### 1. Fetch new candidate papers (deterministic)
 
 ```bash
-node scripts/fetch_papers.mjs --out data/new_candidates.json
+node scripts/fetch_papers.mjs --out "$DATA/new_candidates.json"
 ```
 
 This fetches all feeds in `config/feeds.json`, parses them, dedups by DOI across
-feeds, drops DOIs already recorded in `data/seen.json`, and writes the remaining
-**new** candidates to `data/new_candidates.json`. Read its stderr to get counts.
+feeds, drops DOIs already recorded in `$DATA/seen.json`, and writes the remaining
+**new** candidates to `$DATA/new_candidates.json`. Read its stderr to get counts.
 If it reports `new candidates=0`, skip to step 6 (no new papers today).
 
 ### 2. Read the new candidates
 
-Use `read` on `data/new_candidates.json`. Each record is:
+Use `read` on `$DATA/new_candidates.json`. Each record is:
 
 ```json
 { "doi": "10.1038/...", "title": "...", "link": "https://www.nature.com/articles/...",
@@ -70,7 +78,7 @@ For each kept paper, write a **2–4 句中文摘要** based on `abstract`, cove
 
 ### 5. Build the digest (Markdown)
 
-Write to `data/digests/$DATE.md` with this structure:
+Write to `$DATA/digests/$DATE.md` with this structure:
 
 ```markdown
 # Nature 智能体 & AI for Science 日报
@@ -96,10 +104,10 @@ If zero relevant papers, still write the file with body `**今日无新增相关
 
 ### 6. Update the dedup store (important — do this every run)
 
-Read `data/seen.json` (`{ lastRun, dois: { "10.1038/...": { firstSeen, title, relevant } } }`).
-Add **every** DOI from `data/new_candidates.json` (relevant or not — so irrelevant
+Read `$DATA/seen.json` (`{ lastRun, dois: { "10.1038/...": { firstSeen, title, relevant } } }`).
+Add **every** DOI from `$DATA/new_candidates.json` (relevant or not — so irrelevant
 ones are never re-evaluated), with `firstSeen = $DATE`, the paper's `title`, and
-`relevant = true|false`. Set `lastRun = $DATE`. Write `data/seen.json` back.
+`relevant = true|false`. Set `lastRun = $DATE`. Write `$DATA/seen.json` back.
 
 > Rationale: recording all seen DOIs (not just relevant ones) means only truly
 > new papers get processed next time. This is the "已经搜寻到的论文就不再去整理" rule.
@@ -115,7 +123,7 @@ converts the Markdown digest to HTML.
   `No new relevant papers; email skipped.`
 - If relevant papers exist:
   ```bash
-  node scripts/send_email.mjs --subject "Nature 智能体 & AI for Science 日报 — $DATE" --html-file data/digests/$DATE.md --to zleung9@outlook.com
+  node scripts/send_email.mjs --subject "Nature 智能体 & AI for Science 日报 — $DATE" --html-file "$DATA/digests/$DATE.md" --to zleung9@outlook.com
   ```
   The script sends via msmtp (`-a 163`) if available; falls back to Resend if
   `RESEND_API_KEY` is set; otherwise it **dry-runs** (prints body, exits 0).
@@ -126,7 +134,7 @@ converts the Markdown digest to HTML.
 Print exactly one line:
 
 ```
-Done: <N> new relevant, <M> total new candidates, <K> DOIs in store. Digest: data/digests/<DATE>.md [email sent|email dry-run|email skipped]
+Done: <N> new relevant, <M> total new candidates, <K> DOIs in store. Digest: $DATA/digests/<DATE>.md [email sent|email dry-run|email skipped]
 ```
 
 ## Notes

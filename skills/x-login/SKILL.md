@@ -15,7 +15,9 @@ description: Log in to X.com (Twitter) with Playwright Chromium using a dedicate
   AutomationControlled` + 真实 locale/viewport + 持久 profile 绕过。
 - **不依赖用户的 Chrome / CDP 端口** —— 用 Playwright 自带 Chromium,
   **从不加载用户扩展**(避免 X 的 "privacy related extensions" 启动错误)。
-- **登录 cookie 持久化** 在 `browser-profile/`,登录一次,后续免登录
+- **登录 cookie 持久化** 在 `~/email-assistant/browser-profiles/x-login`
+  (刻意放在技能目录**之外**,避免 Nutstore 同步活动的 Chrome profile;
+  可用 `X_PROFILE_DIR` 环境变量覆盖),登录一次,后续免登录
   (直到 X 让会话过期)。
 - 网络走 macOS 系统代理(如 Clash @ 127.0.0.1:7890),国内可达 X.com。
 
@@ -32,16 +34,20 @@ cd /Users/zliang/.pi/agent/skills/x-login   # = ~/Nutstore Files/skills/web-tool
 
 ## 首次设置
 
-`browser-profile/` 已预建。若 `node_modules` 缺失:
+依赖**全局共享**,不在本技能目录里安装:`node_modules/` 是指向
+`~/.agents/node_modules` 的**软链**(playwright 1.63.x)。
 
 ```bash
-cd /Users/zliang/.pi/agent/skills/x-login && npm install
+npm install --prefix ~/.agents          # 一次性安装/升级所有技能共享的依赖
 ```
+
+> 不要在技能目录里跑 `npm install`——那会把软链替换成本地副本,依赖又会
+> 散落回 Nutstore 同步目录。
 
 若 Chromium 缺失(报 "Executable doesn't exist"):
 
 ```bash
-cd /Users/zliang/.pi/agent/skills/x-login && npx playwright install chromium
+cd ~/.agents && npx playwright install chromium
 ```
 
 ## 三种登录方式
@@ -100,7 +106,7 @@ X_USER='你的用户名或邮箱' X_PASS='你的密码' node scripts/x-login-aut
 
 ```bash
 node scripts/x-logout.mjs --cookies   # 删除 auth_token 等登录 cookie(保留 profile)
-node scripts/x-logout.mjs --purge     # 删除整个 browser-profile/(最强重置)
+node scripts/x-logout.mjs --purge     # 删除整个 profile(~/email-assistant/browser-profiles/x-login,最强重置)
 ```
 
 ## 完整工作流示例
@@ -135,9 +141,10 @@ node scripts/x-status.mjs
 
 ## 注意事项
 
-- `browser-profile/` 同一时间**只能一个进程持有**(SingletonLock)——
+- `~/email-assistant/browser-profiles/x-login` 同一时间**只能一个进程持有**(SingletonLock)——
   脚本需顺序运行。
-- 删除 `browser-profile/` 只会强制重新登录,不丢失其他东西。
+- 删除该 profile 只会强制重新登录,不丢失其他东西(它不在技能目录里,
+  也不进 Nutstore 同步)。
 - 若 X 中途让会话过期(x-status 报未登录),重新跑 `x-login.mjs` 即可。
 - 自动化填表(方式 3)成功率受 X 风控影响,**优先用方式 2**。
 - 凭据只通过环境变量传入,不要写进脚本或 git。

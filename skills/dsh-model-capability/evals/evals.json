@@ -1,0 +1,26 @@
+{
+  "skill_name": "dsh-model-capability",
+  "evals": [
+    {
+      "id": 0,
+      "name": "image-refusal-diagnosis",
+      "prompt": "我用 DSH 读桌面上的截图，报错说 model \"deepseek-v4.1-flash\" does not declare image input。但这个模型我是知道能看图的，昨天还用它识别过发票。为什么不让我读？是我的配置缺了什么吗？",
+      "expected_output": "Correctly explains the refusal is about a missing DECLARATION in config, not model ability. Identifies ~/.dsh (DSH harness), not ~/.pi (pi agent), as the relevant config. Names the relevant layer/file. Verifies the model actually reads images with a real image before advising a declaration. Warns that config is replaced wholesale rather than deep-merged.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "upgrade-persistence",
+      "prompt": "我想在 DSH 里给几个模型加上图像输入声明，但上次改了 profiles/web/cordis.patch.yml 之后过一阵就没了。有没有一种改法是不会被升级覆盖的？顺便问下这样改会不会影响我其他的 profile？",
+      "expected_output": "Names the home layer ~/.dsh/cordis.patch.yml as the upgrade-surviving location and explains why (outside the npx package cache, only ever read by DSH). Proactively warns that this layer applies to EVERY profile, so a config replacement there can erase another profile's routes. Recommends verifying with --dump-config across all profiles.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "false-capability-detection",
+      "prompt": "帮我看看我 DSH 里这些模型到底哪些能读图：deepseek-v4.1-flash、qwen3.8、glm-5.3、deepseek-v4-flash。我想全部加上图片支持，省得以后麻烦。",
+      "expected_output": "Pushes back on declaring all four. Actually tests each model with a real image on the wire. Reports per-model evidence (read-back text vs empty vs explicit refusal). Declares image only for the verified ones; explicitly refuses for glm-5.3 / deepseek-v4-flash if they fail. Explains that a wrong declaration removes DSH's guard and yields confident wrong answers.",
+      "files": []
+    }
+  ]
+}

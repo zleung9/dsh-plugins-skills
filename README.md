@@ -2,6 +2,8 @@
 
 Browse the [skills](skills/) or the [paper reader and downloader plugin](plugins/dsh-paper-downloader/).
 
+The [latest local skills snapshot](SKILLS-SYNC.md) includes 106 skills synchronized from `~/.agents/skills` on 2026-11-19, alongside the repository's existing skills. See the [skill index](skills/skills-index/references/INDEX.md) or [CSV inventory](skills/skills-index/references/skills-index.csv) for available and missing-source entries. Skill files are stored directly; dependencies and host-provided plugin tools are not bundled.
+
 Each skill lives in its own directory with a `SKILL.md` file (YAML frontmatter with `name` and `description`, plus the skill instructions).
 
 ## Shared toolchain (dependencies live outside this repo)
@@ -13,7 +15,7 @@ neutral root** at `~/.agents/`, shared by pi, Claude Code and Codex alike:
 ~/.agents/
   node_modules/          # one copy of playwright / puppeteer-core / cheerio / jsdom / …
   backup/                # pre-refactor backups of profiles and removed junk
-  skills/                # symlinks into this repo (30 entries)
+  skills/                # installed skills or links to skill directories
   browser-profiles       # -> ~/email-assistant/browser-profiles (compat symlink)
 ```
 
